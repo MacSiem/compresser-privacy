@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polityka Prywatności - Compresser</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+        h1 {
+            color: #2196F3;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        h1:first-child {
+            margin-top: 0;
+        }
+        h2 {
+            color: #1976D2;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        h3 {
+            color: #1976D2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        a {
+            color: #2196F3;
+            text-decoration: none;
+            border-bottom: 1px solid #2196F3;
+        }
+        a:hover {
+            color: #1976D2;
+            border-bottom-color: #1976D2;
+        }
+        strong {
+            color: #1976D2;
+        }
+        .lang-switcher {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .lang-switcher a {
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        footer p {
+            margin-bottom: 8px;
+        }
+        footer a {
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switcher">
+            <a href="./">English</a> | <a href="./pl.html">Polska wersja</a>
+        </div>
+
+        <h1>Compresser — Polityka Prywatności</h1>
+        <p><strong>Ostatnia aktualizacja:</strong> 17 kwietnia 2026<br>
+        <strong>Data wejścia w życie:</strong> 17 kwietnia 2026</p>
+
+        <h2>1. Wstęp</h2>
+        <p>Compresser ("my," "nas," lub "Spółka") zobowiązuje się do ochrony Twojej prywatności. Niniejsza Polityka Prywatności wyjaśnia, w jaki sposób gromadzimy, wykorzystujemy, ujawniamy i w inny sposób przetwarzamy informacje w związku z naszą aplikacją mobilną i usługami (dalej "Aplikacja").</p>
+        <p>Compresser to narzędzie kompresji działające w trybie offline do kompresji obrazów, filmów i innych plików multimedialnych. Aplikacja została zaprojektowana z prywatnością jako zasadą główną — Twoje pliki nigdy nie opuszczają Twojego urządzenia.</p>
+
+        <h2>2. Informacje, Które Gromadzimy</h2>
+
+        <h3>2.1 Dane Reklamowe z AdMob</h3>
+        <p>Aplikacja integruje się z Google AdMob w celu wyświetlania reklam. AdMob zbiera następujące informacje:</p>
+        <ul>
+            <li>Identyfikator reklamy (unikalny nieidentyfikowalny osobowo identyfikator Twojego urządzenia)</li>
+            <li>Dane diagnostyczne i awarii związane z serwowaniem reklam</li>
+            <li>Ogólne informacje o urządzeniu (model urządzenia, wersja systemu operacyjnego)</li>
+            <li>Ograniczone dane użytkowania do pomiarów wydajności reklam</li>
+        </ul>
+        <p>Dane te są gromadzone zgodnie z normami prywatności Google AdMob i nie są nam przekazywane w postaci umożliwiającej identyfikację osób. Korzystanie przez Google z identyfikatorów reklam podlega <a href="https://policies.google.com/privacy">Polityce Prywatności Google</a>.</p>
+
+        <h3>2.2 Śledzenie Błędów i Diagnostyka Sentry</h3>
+        <p>Aplikacja korzysta z Sentry do raportowania awarii i diagnostyki technicznej. Sentry zbiera:</p>
+        <ul>
+            <li>Dzienniki awarii i ślady stosu</li>
+            <li>Techniczne informacje o urządzeniu (model, wersja systemu operacyjnego, wersja aplikacji)</li>
+            <li>Metadane żądań HTTP i czasy</li>
+            <li>Działania użytkownika prowadzące do błędów (zanonimizowane)</li>
+        </ul>
+        <p><strong>Ważne:</strong> Sentry jest aktywny tylko wtedy, gdy jest specjalnie skonfigurowany w kompilacji Aplikacji (poprzez skonfigurowany DSN). Raporty awarii nie zawierają żadnych danych umożliwiających identyfikację osób (PII), takich jak email, numer telefonu lub lokalizacja. Pliki poddawane kompresji nigdy nie są wysyłane do Sentry.</p>
+
+        <h3>2.3 Lokalne Przechowywanie na Urządzeniu</h3>
+        <p>Aplikacja przechowuje następujące dane lokalnie na Twoim urządzeniu przy użyciu AsyncStorage:</p>
+        <ul>
+            <li>Preferencje użytkownika (jakość kompresji, domyślne formaty, ustawienia motywu)</li>
+            <li>Flaga ukończenia onboardingu</li>
+            <li>Historia kompresji (znaczniki czasu i statystyki plików, bez zawartości pliku)</li>
+        </ul>
+        <p>Dane te są przechowywane całkowicie na Twoim urządzeniu i nigdy nie są przesyłane do naszych serwerów ani stron trzecich.</p>
+
+        <h3>2.4 Informacje, Których NIE Gromadzimy</h3>
+        <p>Wyraźnie NIE gromadzimy:</p>
+        <ul>
+            <li>Danych osobowych (imię, adres email, numer telefonu)</li>
+            <li>Zawartości plików (Twoje obrazy, filmy czy dokumenty nigdy nie opuszczają urządzenia)</li>
+            <li>Danych lokalizacyjnych</li>
+            <li>Historii przeglądania lub aktywności sieciowej poza Aplikacją</li>
+            <li>Danych biometrycznych</li>
+            <li>Informacji finansowych lub dotyczących płatności</li>
+        </ul>
+
+        <h2>3. Sposób Wykorzystania Twoich Informacji</h2>
+        <ul>
+            <li><strong>Dane z AdMob:</strong> Używane do serwowania odpowiednich reklam i pomiaru efektywności reklam</li>
+            <li><strong>Dane Sentry:</strong> Używane do diagnozowania awarii, poprawy stabilności Aplikacji i naprawy błędów</li>
+            <li><strong>Dane Przechowywane Lokalnie:</strong> Używane do utrzymania Twoich preferencji i poprawy doświadczenia użytkownika</li>
+        </ul>
+
+        <h2>4. Udostępnianie i Ujawnianie Informacji</h2>
+        <p>Nie sprzedajemy, nie wynajmujemy ani nie udostępniamy Twoich danych osobowych stronom trzecim. Jednak:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> Otrzymuje identyfikator reklamowy i diagnostykę związaną z reklamami, jak opisano powyżej</li>
+            <li><strong>Sentry:</strong> Otrzymuje raporty awarii i diagnostykę techniczną tylko gdy jest skonfigurowany</li>
+            <li><strong>Zgodność z Prawem:</strong> Możemy ujawniać informacje, jeśli jest to wymagane prawem lub w odpowiedzi na ważne procesy prawne</li>
+        </ul>
+
+        <h2>5. Przechowywanie Danych</h2>
+        <ul>
+            <li><strong>Przechowywanie Lokalne:</strong> Dane są przechowywane na Twoim urządzeniu do czasu odinstalowania Aplikacji lub wyczyszczenia danych Aplikacji</li>
+            <li><strong>Dane AdMob:</strong> Regulowane polityką przechowywania Google (zwykle 90 dni dla większości metryk)</li>
+            <li><strong>Raporty Awarii Sentry:</strong> Przechowywane przez ograniczony okres (zwykle 30-90 dni) w celu diagnozowania problemów</li>
+        </ul>
+
+        <h2>6. Usługi Stron Trzecich</h2>
+        <p>Aplikacja opiera się na następujących usługach stron trzecich:</p>
+        <ul>
+            <li><strong>Google AdMob:</strong> <a href="https://policies.google.com/privacy">Polityka Prywatności AdMob</a></li>
+            <li><strong>Sentry:</strong> <a href="https://sentry.io/privacy/">Polityka Prywatności Sentry</a></li>
+        </ul>
+        <p>Usługi te mają swoje własne polityki prywatności. Nie odpowiadamy za ich praktyki. Prosimy o zapoznanie się bezpośrednio z ich politykami.</p>
+
+        <h2>7. Bezpieczeństwo</h2>
+        <p>Bezpieczeństwo jest dla nas ważne. Aplikacja działa w trybie offline, aby zminimalizować ekspozycję Twoich danych:</p>
+        <ul>
+            <li>Kompresja plików odbywa się całkowicie na Twoim urządzeniu</li>
+            <li>Żadne dane nie są przesyłane do naszych serwerów</li>
+            <li>Przechowywanie lokalne jest chronione standardowymi uprawnieniami do plików Androida</li>
+            <li>Integracje stron trzecich (AdMob, Sentry) używają szyfrowania zgodnego z normami branżowymi</li>
+        </ul>
+        <p>Jednak żaden system bezpieczeństwa nie jest nieprzeniknalny. Zalecamy aktualizowanie Twojego urządzenia i stosowanie silnych praktyk bezpieczeństwa urządzenia.</p>
+
+        <h2>8. Twoje Prawa</h2>
+
+        <h3>8.1 Kontrola Reklam</h3>
+        <p>Masz prawo ograniczyć spersonalizowane reklamy na Twoim urządzeniu Android:</p>
+        <ol>
+            <li>Przejdź do <strong>Ustawień &gt; Google &gt; Zarządzaj swoim kontem Google &gt; Dane i prywatność</strong></li>
+            <li>Przewiń do "Ustawienia reklam"</li>
+            <li>Wyłącz "Reklamy spersonalizowane"</li>
+        </ol>
+
+        <h3>8.2 Dostęp i Usuwanie Danych Lokalnych</h3>
+        <p>Możesz wyczyścić wszystkie dane przechowywane lokalnie przez Compresser:</p>
+        <ol>
+            <li>Przejdź do <strong>Ustawień &gt; Aplikacje &gt; Compresser</strong></li>
+            <li>Wybierz <strong>Pamięć &gt; Wyczyść Pamięć Podręczną</strong> i <strong>Wyczyść Magazyn</strong></li>
+        </ol>
+
+        <h2>9. Prywatność Dzieci</h2>
+        <p>Compresser nie jest przeznaczony dla użytkowników poniżej 13 lat. Nie gromadzimy świadomie informacji od dzieci poniżej 13 lat. Jeśli odkryjemy, że zebraliśmy informacje od dziecka poniżej 13 lat bez zgody rodziców, podejmiemy kroki, aby niezwłocznie usunąć takie informacje. Jeśli uważasz, że zebraliśmy informacje od dziecka poniżej 13 lat, prosimy o natychmiastowy kontakt.</p>
+
+        <h2>10. Zmiany w Polityce Prywatności</h2>
+        <p>Możemy aktualizować niniejszą Politykę Prywatności od czasu do czasu w celu odzwierciedlenia zmian w naszych praktykach, technologii lub wymogach prawnych. Powiadomimy Cię o istotnych zmianach, aktualizując datę "Ostatnia aktualizacja" na górze niniejszej polityki. Twoje dalsze korzystanie z Aplikacji stanowi akceptację zaktualizowanej Polityki Prywatności.</p>
+
+        <h2>11. Kontakt z Nami</h2>
+        <p>Jeśli masz pytania, wątpliwości lub wnioski dotyczące niniejszej Polityki Prywatności lub naszych praktyk dotyczących prywatności, prosimy o kontakt:</p>
+        <p><strong>Email:</strong> <a href="mailto:maciek.sieminski@gmail.com">maciek.sieminski@gmail.com</a></p>
+
+        <footer>
+            <p><strong>Compresser</strong> — com.compresser.app</p>
+            <p><a href="https://play.google.com/store/apps/details?id=com.compresser.app">Pobierz z Google Play</a> (Wkrótce dostępne)</p>
+        </footer>
+    </div>
+</body>
+</html>
