@@ -77,7 +77,7 @@
 <p>A Google Playen keresztül terjesztett alkalmazás verziójának adatkezelője a(z) LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Ez az Adatvédelmi szabályzat részletezi, hogy a Compresser milyen személyes adatokat dolgoz fel, hogyan, miért, és milyen jogai vannak.</p>
 <h2>2. Közérthető összefoglaló</h2>
-<p>A Compresser teljes mértékben az eszközén fut — fájljai soha nem töltődnek fel szervereinkre. Integráljuk a Google AdMobot a banner és interstitial hirdetésekhez, a Sentryt az összeomlások jelentéséhez, és az Apple / Google számlázást az alkalmazáson belüli vásárlásokhoz. Nem gyűjtjük az Ön nevét, e-mail címét, lakcímét vagy pontos tartózkodási helyét. Ön teljes GDPR jogokkal rendelkezik, beleértve a hozzáférést, törlést és adathordozhatóságot — a legtöbb közvetlenül az alkalmazásban gyakorolható, vagy a mail@macsiem.dev címre írva.</p>
+<p>A Compresser teljes mértékben az eszközén fut — fájljai soha nem töltődnek fel szervereinkre. Integráljuk a Unity Adsot a banner és interstitial hirdetésekhez, a Sentryt az összeomlások jelentéséhez, és az Apple / Google számlázást az alkalmazáson belüli vásárlásokhoz. Nem gyűjtjük az Ön nevét, e-mail címét, lakcímét vagy pontos tartózkodási helyét. Ön teljes GDPR jogokkal rendelkezik, beleértve a hozzáférést, törlést és adathordozhatóságot — a legtöbb közvetlenül az alkalmazásban gyakorolható, vagy a mail@macsiem.dev címre írva.</p>
 <h2>3. Az általunk feldolgozott adatok</h2>
 <h3>3.1 Kizárólag helyi adatok</h3>
 <p>Az alkalmazás helyileg tárolja az eszközén:</p>
@@ -95,13 +95,12 @@
 <li>alkalmazás verzióját és build számát.</li>
 </ul>
 <p>A Sentry <strong>nem</strong> gyűjti az Ön tartalmát (bejegyzések, fájlok, oltási igazolások, fotók, archívumok), felhasználóneveit vagy egyéb PII-t. A diagnosztikai adatokat a Sentry legfeljebb <strong>90 napig</strong> őrzi meg.</p>
-<h3>3.4 Hirdetések (AdMob)</h3>
-<p>A Compresser nem tolakodó hirdetéseket jelenít meg a Kezdőképernyőn, az Eredmények és Beállítások oldalakon (banner) és interstitial hirdetéseket a tömörítési kötegek után. A hirdetéseket a <strong>Google AdMob</strong> szállítja, melynek SDK-ja gyűjti:</p>
+<h3>3.4 Hirdetések (Unity Ads)</h3>
+<p>A Compresser nem tolakodó hirdetéseket jelenít meg a Kezdőképernyőn, az Eredmények és Beállítások oldalakon (banner) és interstitial hirdetéseket a tömörítési kötegek után. A hirdetéseket a <strong>Unity Ads</strong> szállítja, melynek SDK-ja gyűjti:</p>
 <ul>
 <li>az <strong>azonosító hirdetési azonosítót</strong> (Android Advertising ID / Apple IDFA), amelyet megoszt a Google-lal a hirdetések megjelenítéséhez;</li>
 <li>diagnosztikai adatokat (eszközmodell, ország szintű helymeghatározás, nyelv).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Az alapértelmezett mód a <strong>nem személyre szabott hirdetések</strong>. iOS rendszeren az App Tracking Transparency (ATT) kérés felkéri Önt a beleegyezésére, mielőtt bármilyen nyomkövetési célú azonosító használatára sor kerülne; Androidon a Rendszerbeállítások alatt szabályozhatja a hirdetési azonosítót. A hirdetések véglegesen letilthatók a Lifetime / Premium IAP-n keresztül.</p>
 <h3>3.5 Alkalmazáson belüli vásárlások (IAP)</h3>
 <p>A Compresser fizetős funkciókat kínál az Apple In-App Purchase (iOS) és a Google Play Billing (Android) révén. Amikor vásárol:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>Az alkalmazás futtatása az eszközén</strong> — a helyi tárolás és (adott esetben) a titkosítás lehetővé teszi, hogy adatai fennmaradjanak a munkamenetek között.</li>
 <li><strong>A stabilitás javítása</strong> — a Sentry diagnosztika segít kijavítani az összeomlásokat, amelyek befolyásolják a használatát.</li>
-<li><strong>Az ingyenes szint fenntartása</strong> — az AdMob nem tolakodó hirdetéseket jelenít meg azoknak a felhasználóknak a finanszírozására, akik nem vásárolnak prémiumot.</li>
+<li><strong>Az ingyenes szint fenntartása</strong> — az Unity Ads nem tolakodó hirdetéseket jelenít meg azoknak a felhasználóknak a finanszírozására, akik nem vásárolnak prémiumot.</li>
 <li><strong>Vásárlások feldolgozása</strong> — az Apple / Google számlázás teljesíti a megvásárolni kívánt prémium jogosultságokat.</li>
 </ul>
 <h2>5. Jogalap (GDPR 6. cikk)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>Címzett</th><th>Cél</th><th>Adatkategória</th><th>Adatvédelmi irányelvek</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Hirdetések megjelenítése</td><td>Hirdetési azonosító, eszköz- és hirdetési metrikák</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Hirdetések megjelenítése</td><td>Hirdetési azonosító, eszköz- és hirdetési metrikák</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Hirdetések megjelenítése</td><td>Hirdetési azonosító, eszköz- és hirdetési metrikák</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Összeomlás jelentés</td><td>Stack trace-ek, eszköz metaadatok</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Alkalmazáson belüli vásárlások feldolgozása iOS-en</td><td>Vásárlási token, fiók szintű jogosultság</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>Adat</th><th>Hol található</th><th>Meddig</th></tr></thead>
 <tbody>
 <tr><td>Az alkalmazáson belüli adatai</td><td>Csak az Ön eszközén</td><td>Amíg törli, eltávolítja az alkalmazást, vagy törli az alkalmazás adatait</td></tr>
-<tr><td>Hirdetési azonosító</td><td>Google AdMob rendszerek</td><td>A Google adatmegőrzési irányelvei szerint (általában legfeljebb 14 hónap a hirdetési metrikák esetében)</td></tr>
+<tr><td>Hirdetési azonosító</td><td>Unity Ads rendszerek</td><td>A Unity adatmegőrzési irányelvei szerint</td></tr>
 <tr><td>Sentry összeomlási adatok</td><td>Sentry rendszerek</td><td>Az eseménytől számított legfeljebb 90 napig</td></tr>
 <tr><td>IAP vásárlási token / bizonylat</td><td>Az Ön eszköze + Apple / Google</td><td>Az eltávolításig; az Apple / Google a tranzakciós rekordokat saját irányelveik szerint őrzi meg</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>Egyetlen rendszer sem 100%-ban biztonságos; kérjük, tartsa naprakészen eszközét, és használjon erős eszközzárakat.</p>
 <h2>13. Alkalmazáskövetési átláthatóság (iOS) és hirdetési azonosító</h2>
-<p>iOS rendszeren, mielőtt az AdMob bármilyen nyomkövetési célú azonosítót használna, a Compresser megjeleníti a rendszer <strong>Alkalmazáskövetési átláthatóság</strong> kérését. Ha elutasítja, a Compresser csak nem személyre szabott hirdetéseket jelenít meg.</p>
-<p>Android rendszeren a hirdetési azonosítóját a <strong>Beállítások → Google → Hirdetések</strong> menüpont alatt állíthatja vissza vagy korlátozhatja. Az „Azonosító hirdetési azonosító törlése” választása megakadályozza, hogy az AdMob személyes azonosítót használjon; a nem személyre szabott hirdetések továbbra is megjelennek.</p>
+<p>iOS rendszeren, mielőtt az Unity Ads bármilyen nyomkövetési célú azonosítót használna, a Compresser megjeleníti a rendszer <strong>Alkalmazáskövetési átláthatóság</strong> kérését. Ha elutasítja, a Compresser csak nem személyre szabott hirdetéseket jelenít meg.</p>
+<p>Android rendszeren a hirdetési azonosítóját a <strong>Beállítások → Google → Hirdetések</strong> menüpont alatt állíthatja vissza vagy korlátozhatja. Az „Azonosító hirdetési azonosító törlése” választása megakadályozza, hogy az Unity Ads személyes azonosítót használjon; a nem személyre szabott hirdetések továbbra is megjelennek.</p>
 <h2>14. Alkalmazáson belüli vásárlások</h2>
 <p>A Comp</p>
 

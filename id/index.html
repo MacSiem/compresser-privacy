@@ -77,7 +77,7 @@
 <p>Untuk versi aplikasi yang didistribusikan melalui Google Play, pengendali data adalah LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Kebijakan Privasi ini menjelaskan data pribadi apa yang Compresser proses, bagaimana, mengapa, dan hak apa yang Anda miliki.</p>
 <h2>2. Ringkasan sederhana</h2>
-<p>Compresser berjalan sepenuhnya di perangkat Anda — file Anda tidak pernah diunggah ke server kami. Kami mengintegrasikan Google AdMob untuk iklan banner dan interstisial, Sentry untuk pelaporan kerusakan, dan penagihan Apple / Google untuk pembelian dalam aplikasi. Kami tidak mengumpulkan nama, email, alamat, atau lokasi tepat Anda. Anda memiliki hak GDPR penuh termasuk akses, penghapusan, dan portabilitas — sebagian besar dapat dilaksanakan langsung di aplikasi atau dengan menulis ke mail@macsiem.dev.</p>
+<p>Compresser berjalan sepenuhnya di perangkat Anda — file Anda tidak pernah diunggah ke server kami. Kami mengintegrasikan Unity Ads untuk iklan banner dan interstisial, Sentry untuk pelaporan kerusakan, dan penagihan Apple / Google untuk pembelian dalam aplikasi. Kami tidak mengumpulkan nama, email, alamat, atau lokasi tepat Anda. Anda memiliki hak GDPR penuh termasuk akses, penghapusan, dan portabilitas — sebagian besar dapat dilaksanakan langsung di aplikasi atau dengan menulis ke mail@macsiem.dev.</p>
 <h2>3. Data yang kami proses</h2>
 <h3>3.1 Data hanya-lokal</h3>
 <p>Aplikasi menyimpan secara lokal di perangkat Anda:</p>
@@ -95,13 +95,12 @@
 <li>versi aplikasi dan nomor build.</li>
 </ul>
 <p>Sentry <strong>tidak</strong> mengumpulkan konten Anda (entri, file, catatan vaksinasi, foto, arsip), nama pengguna, atau PII lainnya. Data diagnostik disimpan oleh Sentry hingga <strong>90 hari</strong>.</p>
-<h3>3.4 Periklanan (AdMob)</h3>
-<p>Compresser menampilkan iklan non-invasif di Beranda, Hasil, dan Pengaturan (banner) ditambah interstisial setelah proses kompresi. Iklan disampaikan oleh <strong>Google AdMob</strong>, yang SDK-nya mengumpulkan:</p>
+<h3>3.4 Periklanan (Unity Ads)</h3>
+<p>Compresser menampilkan iklan non-invasif di Beranda, Hasil, dan Pengaturan (banner) ditambah interstisial setelah proses kompresi. Iklan disampaikan oleh <strong>Unity Ads</strong>, yang SDK-nya mengumpulkan:</p>
 <ul>
 <li><strong>ID Iklan</strong> (Android Advertising ID / Apple IDFA), dibagikan dengan Google untuk menayangkan iklan;</li>
 <li>data diagnostik (model perangkat, lokasi tingkat negara, bahasa).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Mode default adalah <strong>iklan non-personalisasi</strong>. Di iOS, perintah App Tracking Transparency (ATT) meminta persetujuan Anda sebelum pengenal tingkat pelacakan apa pun digunakan; di Android Anda mengontrol ID Iklan di bawah Pengaturan sistem. Iklan dapat dinonaktifkan secara permanen melalui IAP Seumur Hidup / Premium.</p>
 <h3>3.5 Pembelian dalam aplikasi (IAP)</h3>
 <p>Compresser menawarkan fitur berbayar melalui Pembelian Dalam Aplikasi Apple (iOS) dan Penagihan Google Play (Android). Saat Anda melakukan pembelian:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>Menjalankan aplikasi di perangkat Anda</strong> — penyimpanan lokal dan (jika ada) enkripsi memungkinkan data Anda tetap ada di antara sesi.</li>
 <li><strong>Meningkatkan stabilitas</strong> — diagnostik Sentry membantu memperbaiki kerusakan yang memengaruhi penggunaan Anda.</li>
-<li><strong>Mempertahankan tingkat gratis</strong> — AdMob memberikan iklan non-invasif untuk mendanai pengguna yang tidak membeli premium.</li>
+<li><strong>Mempertahankan tingkat gratis</strong> — Unity Ads memberikan iklan non-invasif untuk mendanai pengguna yang tidak membeli premium.</li>
 <li><strong>Memproses pembelian</strong> — penagihan Apple / Google memenuhi hak premium yang Anda pilih untuk dibeli.</li>
 </ul>
 <h2>5. Dasar hukum (GDPR Art. 6)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>Penerima</th><th>Tujuan</th><th>Kategori data</th><th>Kebijakan privasi</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Menayangkan iklan</td><td>ID Iklan, metrik perangkat &amp; iklan</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Menayangkan iklan</td><td>ID Iklan, metrik perangkat &amp; iklan</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Menayangkan iklan</td><td>ID Iklan, metrik perangkat &amp; iklan</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Pelaporan kerusakan</td><td>Pelacakan tumpukan, metadata perangkat</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Pemrosesan pembelian dalam aplikasi di iOS</td><td>Token pembelian, hak tingkat akun</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>Data</th><th>Tempat penyimpanan</th><th>Berapa lama</th></tr></thead>
 <tbody>
 <tr><td>Data dalam aplikasi Anda</td><td>Hanya perangkat Anda</td><td>Sampai Anda menghapusnya, mencopot pemasangan aplikasi, atau menghapus data aplikasi</td></tr>
-<tr><td>Advertising ID</td><td>Google AdMob systems</td><td>Sesuai kebijakan retensi Google (biasanya hingga 14 bulan untuk metrik iklan)</td></tr>
+<tr><td>Advertising ID</td><td>Unity Ads systems</td><td>Sesuai kebijakan retensi Unity</td></tr>
 <tr><td>Sentry crash data</td><td>Sentry systems</td><td>Hingga 90 hari sejak kejadian</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>Your device + Apple / Google</td><td>Sampai Anda mencopot pemasangan; Apple / Google menyimpan catatan transaksi sesuai kebijakan mereka sendiri</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>Tidak ada sistem yang 100% aman; harap perbarui perangkat Anda dan gunakan kunci perangkat yang kuat.</p>
 <h2>13. Transparansi Pelacakan Aplikasi (iOS) dan ID Iklan</h2>
-<p>Di iOS, sebelum pengenal tingkat pelacakan apa pun digunakan oleh AdMob, Compresser menampilkan perintah sistem <strong>App Tracking Transparency</strong>. Jika Anda menolak, Compresser hanya menyajikan iklan non-personalisasi.</p>
-<p>Di Android, Anda dapat mengatur ulang atau membatasi ID Iklan Anda di bawah <strong>Pengaturan → Google → Iklan</strong>. Memilih "Hapus ID iklan" menghentikan AdMob menggunakan pengenal pribadi; iklan non-personalisasi tetap ditampilkan.</p>
+<p>Di iOS, sebelum pengenal tingkat pelacakan apa pun digunakan oleh Unity Ads, Compresser menampilkan perintah sistem <strong>App Tracking Transparency</strong>. Jika Anda menolak, Compresser hanya menyajikan iklan non-personalisasi.</p>
+<p>Di Android, Anda dapat mengatur ulang atau membatasi ID Iklan Anda di bawah <strong>Pengaturan → Google → Iklan</strong>. Memilih "Hapus ID iklan" menghentikan Unity Ads menggunakan pengenal pribadi; iklan non-personalisasi tetap ditampilkan.</p>
 <h2>14. Pembelian dalam aplikasi</h2>
 <p>Compresser menawarkan produk dalam aplikasi berikut melalui Apple App Store dan Google Play: pembukaan kunci seumur hidup, kotak tip opsional, langganan premium tahunan.</p>
 <p>Semua data pembayaran ditangani oleh <strong>Apple Inc.</strong> (Akun App Store / iTunes) atau <strong>Google LLC</strong> (Penagihan Play). Kami tidak pernah melihat nomor kartu Anda, alamat penagihan Anda, atau akun Apple ID / Google lengkap Anda. Apple dan Google hanya mengembalikan token pembelian buram dan metadata hak yang kami gunakan untuk membuka fitur. Langganan dapat dibatalkan kapan saja di Pengaturan iOS → ID Apple → Langganan atau di aplikasi Google Play → Langganan; aturan pembatalan diatur oleh Apple / Google.</p>

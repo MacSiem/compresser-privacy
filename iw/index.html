@@ -77,7 +77,7 @@
 <p>עבור גרסת האפליקציה המופצת דרך Google Play, בקר הנתונים הוא LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>מדיניות פרטיות זו מסבירה אילו נתונים אישיים Compresser מעבדת, כיצד, מדוע, ואילו זכויות יש לך.</p>
 <h2>2. תקציר בשפה פשוטה</h2>
-<p>Compresser פועלת כולה במכשיר שלך — הקבצים שלך לעולם אינם מועלים לשרתים שלנו. אנו משלבים את Google AdMob עבור פרסומות באנר וביניים, את Sentry לדיווח על קריסות, ואת מערכות החיוב של Apple / Google עבור רכישות מתוך האפליקציה. איננו אוספים את שמך, הדוא"ל שלך, כתובתך או מיקומך המדויק. יש לך את כל זכויות ה-GDPR, כולל גישה, מחיקה וניידות — רובן ניתנות למימוש ישירות באפליקציה או על ידי כתיבה ל-mail@macsiem.dev.</p>
+<p>Compresser פועלת כולה במכשיר שלך — הקבצים שלך לעולם אינם מועלים לשרתים שלנו. אנו משלבים את Unity Ads עבור פרסומות באנר וביניים, את Sentry לדיווח על קריסות, ואת מערכות החיוב של Apple / Google עבור רכישות מתוך האפליקציה. איננו אוספים את שמך, הדוא"ל שלך, כתובתך או מיקומך המדויק. יש לך את כל זכויות ה-GDPR, כולל גישה, מחיקה וניידות — רובן ניתנות למימוש ישירות באפליקציה או על ידי כתיבה ל-mail@macsiem.dev.</p>
 <h2>3. נתונים שאנו מעבדים</h2>
 <h3>3.1 נתונים מקומיים בלבד</h3>
 <p>האפליקציה מאחסנת באופן מקומי במכשיר שלך:</p>
@@ -95,13 +95,12 @@
 <li>גרסת אפליקציה ומספר בנייה.</li>
 </ul>
 <p>Sentry <strong>אינה</strong> אוספת את התוכן שלך (רשומות, קבצים, רישומי חיסונים, תמונות, ארכיונים), שמות משתמש, או PII אחר. נתוני אבחון נשמרים על ידי Sentry למשך עד <strong>90 יום</strong>.</p>
-<h3>3.4 פרסום (AdMob)</h3>
-<p>Compresser מציגה פרסומות לא פולשניות במסכי הבית, תוצאה והגדרות (באנר) וכן פרסומות ביניים לאחר סבבי דחיסה. מודעות נמסרות על ידי <strong>Google AdMob</strong>, ו-SDK שלה אוסף:</p>
+<h3>3.4 פרסום (Unity Ads)</h3>
+<p>Compresser מציגה פרסומות לא פולשניות במסכי הבית, תוצאה והגדרות (באנר) וכן פרסומות ביניים לאחר סבבי דחיסה. מודעות נמסרות על ידי <strong>Unity Ads</strong>, ו-SDK שלה אוסף:</p>
 <ul>
 <li>את <strong>מזהה הפרסום</strong> (Android Advertising ID / Apple IDFA), המשותף ל-Google להצגת מודעות;</li>
 <li>נתוני אבחון (דגם מכשיר, מיקום ברמת המדינה, שפה).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>מצב ברירת המחדל הוא <strong>מודעות לא מותאמות אישית</strong>. ב-iOS, הנחיה של App Tracking Transparency (ATT) מבקשת את הסכמתך לפני שימוש בכל מזהה ברמת מעקב; באנדרואיד אתה שולט במזהה הפרסום תחת הגדרות המערכת. ניתן להשבית פרסומות לצמיתות באמצעות ה-IAP של Lifetime / Premium.</p>
 <h3>3.5 רכישות מתוך האפליקציה (IAP)</h3>
 <p>Compresser מציעה תכונות בתשלום באמצעות Apple In-App Purchase (iOS) ו-Google Play Billing (Android). כאשר אתה מבצע רכישה:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>להפעיל את האפליקציה במכשיר שלך</strong> — אחסון מקומי ו(במידת הצורך) הצפנה מאפשרים לנתונים שלך להישמר בין הפעלות.</li>
 <li><strong>לשפר יציבות</strong> — אבחון Sentry עוזר לתקן קריסות המשפיעות על השימוש שלך.</li>
-<li><strong>לתמוך בשכבה החינמית</strong> — AdMob מספקת פרסומות לא פולשניות כדי לממן משתמשים שאינם רוכשים פרימיום.</li>
+<li><strong>לתמוך בשכבה החינמית</strong> — Unity Ads מספקת פרסומות לא פולשניות כדי לממן משתמשים שאינם רוכשים פרימיום.</li>
 <li><strong>לעבד רכישות</strong> — מערכות החיוב של Apple / Google ממלאות זכאויות פרימיום שאתה בוחר לרכוש.</li>
 </ul>
 <h2>5. בסיס חוקי (GDPR Art. 6)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>נמען</th><th>מטרה</th><th>קטגוריית נתונים</th><th>מדיניות פרטיות</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>הצגת מודעות</td><td>מזהה פרסום, מדדי מכשיר ומודעות</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>הצגת מודעות</td><td>מזהה פרסום, מדדי מכשיר ומודעות</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>הצגת מודעות</td><td>מזהה פרסום, מדדי מכשיר ומודעות</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>דיווח על קריסות</td><td>עקבות מחסנית, מטא-נתונים של מכשיר</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>עיבוד רכישות מתוך האפליקציה ב-iOS</td><td>אסימון רכישה, זכאות ברמת חשבון</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>נתון</th><th>היכן הוא נמצא</th><th>לכמה זמן</th></tr></thead>
 <tbody>
 <tr><td>הנתונים שלך בתוך האפליקציה</td><td>רק במכשיר שלך</td><td>עד שתמחק אותם, תסיר את התקנת האפליקציה, או תמחק את נתוני האפליקציה</td></tr>
-<tr><td>מזהה פרסום</td><td>מערכות Google AdMob</td><td>לפי מדיניות שמירת הנתונים של Google (בדרך כלל עד 14 חודשים עבור מדדי מודעות)</td></tr>
+<tr><td>מזהה פרסום</td><td>מערכות Unity Ads</td><td>לפי מדיניות שמירת הנתונים של Unity</td></tr>
 <tr><td>נתוני קריסה של Sentry</td><td>מערכות Sentry</td><td>עד 90 יום מהאירוע</td></tr>
 <tr><td>אסימון רכישה / קבלה של IAP</td><td>המכשיר שלך + Apple / Google</td><td>עד שתסיר את ההתקנה; Apple / Google שומרות רשומות עסקאות לפי המדיניות שלהן</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>שום מערכת אינה מאובטחת ב-100%; אנא עדכן את מכשירך והשתמש במנעולי מכשיר חזקים.</p>
 <h2>13. שקיפות מעקב יישומים (iOS) ומזהה פרסום</h2>
-<p>ב-iOS, לפני שימוש בכל מזהה ברמת מעקב על ידי AdMob, Compresser מציגה את הנחיית המערכת <strong>App Tracking Transparency</strong>. אם תסרב, Compresser תציג רק מודעות לא מותאמות אישית.</p>
-<p>באנדרואיד, תוכל לאפס או להגביל את מזהה הפרסום שלך תחת <strong>הגדרות ← Google ← מודעות</strong>. בחירה ב"מחק מזהה פרסום" מונעת מ-AdMob להשתמש במזהה אישי; מודעות לא מותאמות אישית ימשיכו להיות מוצגות.</p>
+<p>ב-iOS, לפני שימוש בכל מזהה ברמת מעקב על ידי Unity Ads, Compresser מציגה את הנחיית המערכת <strong>App Tracking Transparency</strong>. אם תסרב, Compresser תציג רק מודעות לא מותאמות אישית.</p>
+<p>באנדרואיד, תוכל לאפס או להגביל את מזהה הפרסום שלך תחת <strong>הגדרות ← Google ← מודעות</strong>. בחירה ב"מחק מזהה פרסום" מונעת מ-Unity Ads להשתמש במזהה אישי; מודעות לא מותאמות אישית ימשיכו להיות מוצגות.</p>
 <h2>14. רכישות מתוך האפליקציה</h2>
 <p>Compresser מציעה את המוצרים הבאים בתוך האפליקציה דרך Apple App Store ו-Google Play: פתיחת נעילה לכל החיים, קופת תרומות אופציונלית, מנוי שנתי פרימיום.</p>
 <p>כל נתוני התשלום מטופלים על ידי <strong>Apple Inc.</strong> (חשבון App Store / iTunes) או <strong>Google LLC</strong> (Play Billing). לעולם איננו רואים את מספר הכרטיס שלך, כתובת החיוב שלך, או חשבון ה-Apple ID / Google המלא שלך. Apple ו-Google מחזירות רק אסימון רכישה בלתי שקוף ומטא-נתוני זכאות שאנו משתמשים בהם כדי לפתוח תכונות. ניתן לבטל מנויים בכל עת בהגדרות iOS → Apple ID → מנויים או באפליקציית Google Play → מנויים; כללי הביטול כפופים ל-Apple / Google.</p>

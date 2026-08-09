@@ -77,7 +77,7 @@
 <p>Google Playn kautta jaettavan sovellusversion osalta tietojen rekisterinpitäjä on LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Tämä tietosuojakäytäntö selittää, mitä henkilötietoja Compresser käsittelee, miten, miksi ja mitä oikeuksia sinulla on.</p>
 <h2>2. Yksinkertaistettu yhteenveto</h2>
-<p>Compresser toimii kokonaan laitteellasi — tiedostojasi ei koskaan ladata palvelimillemme. Integroimme Google AdMobin banneri- ja välisivun mainoksia varten, Sentryn kaatumisraportointia varten, ja Apple / Google -laskutuksen sovelluksen sisäisiä ostoja varten. Emme kerää nimeäsi, sähköpostiosoitettasi, osoitettasi tai tarkkaa sijaintiasi. Sinulla on kaikki GDPR-oikeudet, mukaan lukien pääsy tietoihin, niiden poistaminen ja siirrettävyys — useimmat niistä ovat käytettävissä suoraan sovelluksessa tai kirjoittamalla osoitteeseen mail@macsiem.dev.</p>
+<p>Compresser toimii kokonaan laitteellasi — tiedostojasi ei koskaan ladata palvelimillemme. Integroimme Unity Adsin banneri- ja välisivun mainoksia varten, Sentryn kaatumisraportointia varten, ja Apple / Google -laskutuksen sovelluksen sisäisiä ostoja varten. Emme kerää nimeäsi, sähköpostiosoitettasi, osoitettasi tai tarkkaa sijaintiasi. Sinulla on kaikki GDPR-oikeudet, mukaan lukien pääsy tietoihin, niiden poistaminen ja siirrettävyys — useimmat niistä ovat käytettävissä suoraan sovelluksessa tai kirjoittamalla osoitteeseen mail@macsiem.dev.</p>
 <h2>3. Käsittelemämme tiedot</h2>
 <h3>3.1 Vain paikalliset tiedot</h3>
 <p>Sovellus tallentaa paikallisesti laitteellesi:</p>
@@ -95,13 +95,12 @@
 <li>sovelluksen versio ja koontinumero.</li>
 </ul>
 <p>Sentry <strong>ei</strong> kerää sisältöäsi (merkintöjä, tiedostoja, rokotustietoja, valokuvia, arkistoja), käyttäjätunnuksia tai muita henkilökohtaisesti tunnistettavia tietoja (PII). Diagnostiikkatiedot säilytetään Sentryssä enintään <strong>90 päivän</strong> ajan.</p>
-<h3>3.4 Mainonta (AdMob)</h3>
-<p>Compresser näyttää huomaamattomia mainoksia Koti-, Tulos- ja Asetukset-sivuilla (banneri) sekä välisivun mainoksia pakkauserien jälkeen. Mainokset toimittaa <strong>Google AdMob</strong>, jonka SDK kerää:</p>
+<h3>3.4 Mainonta (Unity Ads)</h3>
+<p>Compresser näyttää huomaamattomia mainoksia Koti-, Tulos- ja Asetukset-sivuilla (banneri) sekä välisivun mainoksia pakkauserien jälkeen. Mainokset toimittaa <strong>Unity Ads</strong>, jonka SDK kerää:</p>
 <ul>
 <li><strong>Mainostunnisteen</strong> (Android Advertising ID / Apple IDFA), joka jaetaan Googlen kanssa mainosten näyttämistä varten;</li>
 <li>diagnostiikkatiedot (laitteen malli, maakohtainen sijainti, kieli).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Oletustila on <strong>ei-personoidut mainokset</strong>. iOS:ssä App Tracking Transparency (ATT) -kehotus pyytää suostumuksesi ennen minkään seurantaan käytettävän tunnisteen käyttöä; Androidissa voit hallita mainostunnusta järjestelmän Asetuksissa. Mainokset voidaan poistaa pysyvästi käytöstä Elinikäinen / Premium IAP:n kautta.</p>
 <h3>3.5 Sovelluksen sisäiset ostokset (IAP)</h3>
 <p>Compresser tarjoaa maksullisia ominaisuuksia Apple In-App Purchase (iOS) ja Google Play Billing (Android) -palveluiden kautta. Kun teet ostoksen:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>Sovelluksen suorittaminen laitteellasi</strong> — paikallinen tallennustila ja (tarvittaessa) salaus mahdollistavat tietojesi säilymisen istuntojen välillä.</li>
 <li><strong>Vakauden parantaminen</strong> — Sentryn diagnostiikka auttaa korjaamaan kaatumisia, jotka vaikuttavat käyttöön.</li>
-<li><strong>Ilmaisversion ylläpitäminen</strong> — AdMob näyttää huomaamattomia mainoksia rahoittaakseen käyttäjiä, jotka eivät osta premium-versiota.</li>
+<li><strong>Ilmaisversion ylläpitäminen</strong> — Unity Ads näyttää huomaamattomia mainoksia rahoittaakseen käyttäjiä, jotka eivät osta premium-versiota.</li>
 <li><strong>Ostosten käsittely</strong> — Apple / Google -laskutus täyttää valitsemasi premium-oikeudet.</li>
 </ul>
 <h2>5. Oikeusperuste (GDPR-asetuksen artikla 6)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>Vastaanottaja</th><th>Tarkoitus</th><th>Tietoluokka</th><th>Tietosuojakäytäntö</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Mainosten näyttäminen</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Mainosten näyttäminen</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Mainosten näyttäminen</td><td>Advertising ID, device &amp; ad metrics</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Kaatumisraportointi</td><td>Stack traces, device metadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Sovelluksen sisäisten ostojen käsittely iOS:ssä</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>Tieto</th><th>Missä se sijaitsee</th><th>Kuinka kauan</th></tr></thead>
 <tbody>
 <tr><td>Sovelluksen sisäiset tietosi</td><td>Vain laitteellasi</td><td>Kunnes poistat sen, poistat sovelluksen asennuksen tai tyhjennät sovelluksen tiedot</td></tr>
-<tr><td>Advertising ID</td><td>Google AdMob systems</td><td>Googlen säilytyskäytännön mukaisesti (yleensä enintään 14 kuukautta mainosmittareille)</td></tr>
+<tr><td>Advertising ID</td><td>Unity Ads systems</td><td>Unityn säilytyskäytännön mukaisesti</td></tr>
 <tr><td>Sentry crash data</td><td>Sentry systems</td><td>Enintään 90 päivää tapahtumasta</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>Your device + Apple / Google</td><td>Kunnes poistat asennuksen; Apple / Google säilyttävät tapahtumatiedot omien käytäntöjensä mukaisesti</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>Mikään järjestelmä ei ole 100% turvallinen; pidä laitteesi päivitettynä ja käytä vahvoja laitelukkoja.</p>
 <h2>13. App Tracking Transparency (iOS) ja Mainostunniste</h2>
-<p>iOS:ssä, ennen kuin AdMob käyttää mitään seurantaan tarkoitettua tunnistetta, Compresser näyttää järjestelmän <strong>App Tracking Transparency</strong> -kehotuksen. Jos kieltäydyt, Compresser näyttää vain ei-personoituja mainoksia.</p>
-<p>Androidissa voit nollata tai rajoittaa mainostunnustasi kohdasta <strong>Asetukset → Google → Mainokset</strong>. Valitsemalla "Poista mainostunnus" estät AdMobia käyttämästä henkilökohtaista tunnistetta; ei-personoituja mainoksia näytetään edelleen.</p>
+<p>iOS:ssä, ennen kuin Unity Ads käyttää mitään seurantaan tarkoitettua tunnistetta, Compresser näyttää järjestelmän <strong>App Tracking Transparency</strong> -kehotuksen. Jos kieltäydyt, Compresser näyttää vain ei-personoituja mainoksia.</p>
+<p>Androidissa voit nollata tai rajoittaa mainostunnustasi kohdasta <strong>Asetukset → Google → Mainokset</strong>. Valitsemalla "Poista mainostunnus" estät Unity Adsia käyttämästä henkilökohtaista tunnistetta; ei-personoituja mainoksia näytetään edelleen.</p>
 <h2>14. Sovelluksen sisäiset ostokset</h2>
 <p>Compresser tarjoaa seuraavat sovelluksen sisäiset tuotteet Apple App Storen ja Google Playn kautta: elinikäinen lukituksen poisto, valinnainen juomarahapurkki, vuosittainen premium-tilaus.</p>
 <p>Kaikki maksutiedot käsittelee <strong>Apple Inc.</strong> (App Store / iTunes-tili) tai <strong>Google LLC</strong> (Play Billing). Emme koskaan näe korttisi numeroa, laskutusosoitettasi tai koko Apple ID / Google -tiliäsi. Apple ja Google palauttavat vain läpinäkymättömän ostotunnuksen ja oikeutustiedot, joita käytämme ominaisuuksien avaamiseen. Tilaukset voidaan peruuttaa milloin tahansa iOS-asetuksista (Asetukset → Apple ID → Tilaukset) tai Google Play -sovelluksesta (Tilaukset); peruutusehdot määräytyvät Applen / Googlen mukaan.</p>

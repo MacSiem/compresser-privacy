@@ -77,7 +77,7 @@
 <p>สำหรับแอปเวอร์ชันที่เผยแพร่ผ่าน Google Play ผู้ควบคุมข้อมูลคือ LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>นโยบายความเป็นส่วนตัวนี้อธิบายว่า Compresser ประมวลผลข้อมูลส่วนบุคคลใด อย่างไร ทำไม และคุณมีสิทธิ์อะไรบ้าง</p>
 <h2>2. สรุปโดยย่อเข้าใจง่าย</h2>
-<p>Compresser ทำงานทั้งหมดบนอุปกรณ์ของคุณ — ไฟล์ของคุณไม่เคยถูกอัปโหลดไปยังเซิร์ฟเวอร์ของเรา เราได้รวม Google AdMob สำหรับโฆษณาแบนเนอร์และโฆษณาคั่นระหว่างหน้า และ Sentry สำหรับการรายงานข้อขัดข้อง รวมถึงการเรียกเก็บเงินของ Apple / Google สำหรับการซื้อภายในแอป เราไม่เก็บรวบรวมชื่อ อีเมล ที่อยู่ หรือตำแหน่งที่ตั้งที่แม่นยำของคุณ คุณมีสิทธิ์ตาม GDPR อย่างเต็มที่ รวมถึงการเข้าถึง การลบ และการเคลื่อนย้ายข้อมูล — ส่วนใหญ่สามารถใช้สิทธิ์ได้โดยตรงในแอปหรือโดยการเขียนถึง mail@macsiem.dev</p>
+<p>Compresser ทำงานทั้งหมดบนอุปกรณ์ของคุณ — ไฟล์ของคุณไม่เคยถูกอัปโหลดไปยังเซิร์ฟเวอร์ของเรา เราได้รวม Unity Ads สำหรับโฆษณาแบนเนอร์และโฆษณาคั่นระหว่างหน้า และ Sentry สำหรับการรายงานข้อขัดข้อง รวมถึงการเรียกเก็บเงินของ Apple / Google สำหรับการซื้อภายในแอป เราไม่เก็บรวบรวมชื่อ อีเมล ที่อยู่ หรือตำแหน่งที่ตั้งที่แม่นยำของคุณ คุณมีสิทธิ์ตาม GDPR อย่างเต็มที่ รวมถึงการเข้าถึง การลบ และการเคลื่อนย้ายข้อมูล — ส่วนใหญ่สามารถใช้สิทธิ์ได้โดยตรงในแอปหรือโดยการเขียนถึง mail@macsiem.dev</p>
 <h2>3. ข้อมูลที่เราประมวลผล</h2>
 <h3>3.1 ข้อมูลเฉพาะในอุปกรณ์</h3>
 <p>แอปจัดเก็บข้อมูลต่อไปนี้บนอุปกรณ์ของคุณ:</p>
@@ -95,13 +95,12 @@
 <li>เวอร์ชั่นแอปและหมายเลข build.</li>
 </ul>
 <p>Sentry <strong>ไม่</strong> รวบรวมเนื้อหาของคุณ (รายการ, ไฟล์, บันทึกการฉีดวัคซีน, รูปภาพ, ไฟล์เก็บถาวร), ชื่อผู้ใช้ หรือ PII อื่นๆ ข้อมูลการวินิจฉัยจะถูก Sentry เก็บไว้ไม่เกิน <strong>90 วัน</strong></p>
-<h3>3.4 การโฆษณา (AdMob)</h3>
-<p>Compresser แสดงโฆษณาที่ไม่รบกวนบนหน้า Home, Result และ Settings (แบนเนอร์) รวมถึงโฆษณาคั่นระหว่างหน้าหลังจากชุดการบีบอัด โฆษณาเหล่านี้จัดส่งโดย <strong>Google AdMob</strong> ซึ่ง SDK จะรวบรวม:</p>
+<h3>3.4 การโฆษณา (Unity Ads)</h3>
+<p>Compresser แสดงโฆษณาที่ไม่รบกวนบนหน้า Home, Result และ Settings (แบนเนอร์) รวมถึงโฆษณาคั่นระหว่างหน้าหลังจากชุดการบีบอัด โฆษณาเหล่านี้จัดส่งโดย <strong>Unity Ads</strong> ซึ่ง SDK จะรวบรวม:</p>
 <ul>
 <li><strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA) ซึ่งจะถูกแชร์กับ Google เพื่อแสดงโฆษณา;</li>
 <li>ข้อมูลการวินิจฉัย (รุ่นอุปกรณ์, ตำแหน่งที่ตั้งระดับประเทศ, ภาษา).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>โหมดเริ่มต้นคือ <strong>โฆษณาที่ไม่ปรับแต่ง</strong> บน iOS ข้อความแจ้ง App Tracking Transparency (ATT) จะขอความยินยอมจากคุณก่อนที่จะใช้ตัวระบุระดับการติดตามใดๆ; บน Android คุณควบคุม Advertising ID ได้ภายใต้ Settings ของระบบ โฆษณาอาจถูกปิดใช้งานอย่างถาวรผ่าน Lifetime / Premium IAP</p>
 <h3>3.5 การซื้อภายในแอป (IAP)</h3>
 <p>Compresser เสนอคุณสมบัติแบบชำระเงินผ่าน Apple In-App Purchase (iOS) และ Google Play Billing (Android) เมื่อคุณทำการซื้อ:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>เรียกใช้แอปบนอุปกรณ์ของคุณ</strong> — การจัดเก็บในเครื่อง และ (ในกรณีที่มี) การเข้ารหัส ช่วยให้ข้อมูลของคุณคงอยู่ระหว่างเซสชัน.</li>
 <li><strong>ปรับปรุงความเสถียร</strong> — การวินิจฉัยของ Sentry ช่วยแก้ไขข้อขัดข้องที่ส่งผลต่อการใช้งานของคุณ.</li>
-<li><strong>รักษาบริการฟรี</strong> — AdMob แสดงโฆษณาที่ไม่รบกวนเพื่อเป็นทุนสนับสนุนผู้ใช้ที่ไม่ซื้อพรีเมียม.</li>
+<li><strong>รักษาบริการฟรี</strong> — Unity Ads แสดงโฆษณาที่ไม่รบกวนเพื่อเป็นทุนสนับสนุนผู้ใช้ที่ไม่ซื้อพรีเมียม.</li>
 <li><strong>ประมวลผลการซื้อ</strong> — การเรียกเก็บเงินของ Apple / Google เป็นไปตามสิทธิ์พรีเมียมที่คุณเลือกซื้อ.</li>
 </ul>
 <h2>5. พื้นฐานทางกฎหมาย (GDPR Art. 6)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>ผู้รับ</th><th>วัตถุประสงค์</th><th>หมวดหมู่ข้อมูล</th><th>นโยบายความเป็นส่วนตัว</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>แสดงโฆษณา</td><td>Advertising ID, เมตริกอุปกรณ์และโฆษณา</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>แสดงโฆษณา</td><td>Advertising ID, เมตริกอุปกรณ์และโฆษณา</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>แสดงโฆษณา</td><td>Advertising ID, เมตริกอุปกรณ์และโฆษณา</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>การรายงานข้อขัดข้อง</td><td>Stack traces, เมตาดาต้าอุปกรณ์</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>การประมวลผลการซื้อในแอปบน iOS</td><td>Purchase token, สิทธิ์ระดับบัญชี</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>ข้อมูล</th><th>ที่อยู่ของข้อมูล</th><th>ระยะเวลา</th></tr></thead>
 <tbody>
 <tr><td>ข้อมูลในแอปของคุณ</td><td>บนอุปกรณ์ของคุณเท่านั้น</td><td>จนกว่าคุณจะลบ, ถอนการติดตั้งแอป, หรือล้างข้อมูลแอป</td></tr>
-<tr><td>Advertising ID</td><td>ระบบ Google AdMob</td><td>ตามนโยบายการเก็บรักษาข้อมูลของ Google (โดยทั่วไปไม่เกิน 14 เดือนสำหรับเมตริกโฆษณา)</td></tr>
+<tr><td>Advertising ID</td><td>ระบบ Unity Ads</td><td>ตามนโยบายการเก็บรักษาข้อมูลของ Unity</td></tr>
 <tr><td>ข้อมูลข้อขัดข้องของ Sentry</td><td>ระบบ Sentry</td><td>ไม่เกิน 90 วันนับจากเหตุการณ์</td></tr>
 <tr><td>IAP purchase token / receipt</td><td>อุปกรณ์ของคุณ + Apple / Google</td><td>จนกว่าคุณจะถอนการติดตั้ง; Apple / Google จะเก็บรักษาบันทึกธุรกรรมตามนโยบายของตนเอง</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>ไม่มีระบบใดที่ปลอดภัย 100%; โปรดอัปเดตอุปกรณ์ของคุณและใช้การล็อกอุปกรณ์ที่แข็งแกร่ง</p>
 <h2>13. App Tracking Transparency (iOS) และ Advertising ID</h2>
-<p>บน iOS ก่อนที่ AdMob จะใช้ตัวระบุระดับการติดตามใดๆ Compresser จะแสดงข้อความแจ้งระบบ <strong>App Tracking Transparency</strong> หากคุณปฏิเสธ Compresser จะแสดงเฉพาะโฆษณาที่ไม่ปรับแต่งเท่านั้น</p>
-<p>บน Android คุณสามารถรีเซ็ตหรือจำกัด Advertising ID ของคุณได้ภายใต้ <strong>Settings → Google → Ads</strong> การเลือก "Delete advertising ID" จะหยุด AdMob จากการใช้ตัวระบุส่วนบุคคล; โฆษณาที่ไม่ปรับแต่งจะยังคงแสดงต่อไป</p>
+<p>บน iOS ก่อนที่ Unity Ads จะใช้ตัวระบุระดับการติดตามใดๆ Compresser จะแสดงข้อความแจ้งระบบ <strong>App Tracking Transparency</strong> หากคุณปฏิเสธ Compresser จะแสดงเฉพาะโฆษณาที่ไม่ปรับแต่งเท่านั้น</p>
+<p>บน Android คุณสามารถรีเซ็ตหรือจำกัด Advertising ID ของคุณได้ภายใต้ <strong>Settings → Google → Ads</strong> การเลือก "Delete advertising ID" จะหยุด Unity Ads จากการใช้ตัวระบุส่วนบุคคล; โฆษณาที่ไม่ปรับแต่งจะยังคงแสดงต่อไป</p>
 <h2>14. การซื้อภายในแอป</h2>
 <p>Compresser เสนอผลิตภัณฑ์ในแอปต่อไปนี้ผ่าน Apple App Store และ Google Play: ปลดล็อคตลอดชีพ, กล่องทิปเสริม, สมัครสมาชิกพรีเมียมรายปี</p>
 <p>ข้อมูลการชำระเงินทั้งหมดได้รับการจัดการโดย <strong>Apple Inc.</strong> (App Store / บัญชี iTunes) หรือ <strong>Google LLC</strong> (Play Billing) เราไม่เคยเห็นหมายเลขบัตรของคุณ, ที่อยู่สำหรับเรียกเก็บเงินของคุณ, หรือ Apple ID / บัญชี Google เต็มของคุณ Apple และ Google จะคืนเฉพาะ purchase token ที่ไม่โปร่งใสและเมตาดาต้าสิทธิ์ที่เราใช้เพื่อปลดล็อคคุณสมบัติ การสมัครสมาชิกสามารถยกเลิกได้ตลอดเวลาในการตั้งค่า iOS → Apple ID → Subscriptions หรือในแอป Google Play → Subscriptions; กฎการยกเลิกอยู่ภายใต้การกำกับดูแลของ Apple / Google</p>

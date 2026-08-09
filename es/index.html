@@ -77,7 +77,7 @@
 <p>Para la versión de la aplicación distribuida a través de Google Play, el responsable del tratamiento de los datos es LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Esta Política de Privacidad explica qué datos personales Compresser procesa, cómo, por qué, y qué derechos tiene usted.</p>
 <h2>2. Resumen en lenguaje sencillo</h2>
-<p>Compresser se ejecuta completamente en su dispositivo — sus archivos nunca se suben a nuestros servidores. Integramos Google AdMob para anuncios de banner e intersticiales, Sentry para informes de errores y la facturación de Apple / Google para compras dentro de la aplicación. No recopilamos su nombre, correo electrónico, dirección o ubicación precisa. Usted tiene plenos derechos RGPD, incluyendo acceso, eliminación y portabilidad — la mayoría de ellos pueden ejercerse directamente en la aplicación o escribiendo a mail@macsiem.dev.</p>
+<p>Compresser se ejecuta completamente en su dispositivo — sus archivos nunca se suben a nuestros servidores. Integramos Unity Ads para anuncios de banner e intersticiales, Sentry para informes de errores y la facturación de Apple / Google para compras dentro de la aplicación. No recopilamos su nombre, correo electrónico, dirección o ubicación precisa. Usted tiene plenos derechos RGPD, incluyendo acceso, eliminación y portabilidad — la mayoría de ellos pueden ejercerse directamente en la aplicación o escribiendo a mail@macsiem.dev.</p>
 <h2>3. Datos que procesamos</h2>
 <h3>3.1 Datos solo locales</h3>
 <p>La aplicación almacena localmente en su dispositivo:</p>
@@ -95,13 +95,12 @@
 <li>versión de la aplicación y número de compilación.</li>
 </ul>
 <p>Sentry <strong>no</strong> recopila su contenido (entradas, archivos, registros de vacunación, fotos, archivos), nombres de usuario u otra información de identificación personal (PII). Los datos de diagnóstico son retenidos por Sentry por un máximo de <strong>90 días</strong>.</p>
-<h3>3.4 Publicidad (AdMob)</h3>
-<p>Compresser muestra anuncios no invasivos en Inicio, Resultado y Configuración (banner), además de intersticiales después de lotes de compresión. Los anuncios son entregados por <strong>Google AdMob</strong>, cuyo SDK recopila:</p>
+<h3>3.4 Publicidad (Unity Ads)</h3>
+<p>Compresser muestra anuncios no invasivos en Inicio, Resultado y Configuración (banner), además de intersticiales después de lotes de compresión. Los anuncios son entregados por <strong>Unity Ads</strong>, cuyo SDK recopila:</p>
 <ul>
 <li>el <strong>Advertising ID</strong> (Android Advertising ID / Apple IDFA), compartido con Google para servir anuncios;</li>
 <li>datos de diagnóstico (modelo del dispositivo, ubicación a nivel de país, idioma).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>El modo predeterminado es <strong>anuncios no personalizados</strong>. En iOS, la solicitud de Transparencia de Seguimiento de Aplicaciones (ATT) pide su consentimiento antes de utilizar cualquier identificador de seguimiento; en Android usted controla el Advertising ID en la configuración del sistema. Los anuncios pueden desactivarse permanentemente a través de la IAP de por vida / Premium.</p>
 <h3>3.5 Compras dentro de la aplicación (IAP)</h3>
 <p>Compresser ofrece funciones de pago a través de Apple In-App Purchase (iOS) y Google Play Billing (Android). Cuando realiza una compra:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>Ejecutar la aplicación en su dispositivo</strong> — el almacenamiento local y (cuando presente) el cifrado permiten que sus datos persistan entre sesiones.</li>
 <li><strong>Mejorar la estabilidad</strong> — los diagnósticos de Sentry ayudan a solucionar los fallos que afectan su uso.</li>
-<li><strong>Sostener la versión gratuita</strong> — AdMob entrega anuncios no invasivos para financiar a los usuarios que no compran la versión premium.</li>
+<li><strong>Sostener la versión gratuita</strong> — Unity Ads entrega anuncios no invasivos para financiar a los usuarios que no compran la versión premium.</li>
 <li><strong>Procesar compras</strong> — la facturación de Apple / Google cumple con los derechos premium que usted elige comprar.</li>
 </ul>
 <h2>5. Base jurídica (Artículo 6 RGPD)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>Destinatario</th><th>Propósito</th><th>Categoría de datos</th><th>Política de privacidad</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Servir anuncios</td><td>Advertising ID, métricas de dispositivo y anuncios</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Servir anuncios</td><td>Advertising ID, métricas de dispositivo y anuncios</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Servir anuncios</td><td>Advertising ID, métricas de dispositivo y anuncios</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Informes de fallos</td><td>Rastros de pila, metadatos del dispositivo</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Procesamiento de compras dentro de la aplicación en iOS</td><td>Token de compra, derecho a nivel de cuenta</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>Datos</th><th>Dónde residen</th><th>Cuánto tiempo</th></tr></thead>
 <tbody>
 <tr><td>Sus datos dentro de la aplicación</td><td>Solo su dispositivo</td><td>Hasta que los elimine, desinstale la aplicación o borre los datos de la aplicación</td></tr>
-<tr><td>Advertising ID</td><td>Sistemas de Google AdMob</td><td>Según la política de retención de Google (típicamente hasta 14 meses para métricas de anuncios)</td></tr>
+<tr><td>Advertising ID</td><td>Sistemas de Unity Ads</td><td>Según la política de retención de Unity</td></tr>
 <tr><td>Datos de fallos de Sentry</td><td>Sistemas de Sentry</td><td>Hasta 90 días desde el evento</td></tr>
 <tr><td>Token de compra / recibo de IAP</td><td>Su dispositivo + Apple / Google</td><td>Hasta que desinstale; Apple / Google conservan los registros de transacciones según sus propias políticas</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>Ningún sistema es 100% seguro; por favor, mantenga su dispositivo actualizado y use bloqueos de dispositivo fuertes.</p>
 <h2>13. Transparencia de Seguimiento de Aplicaciones (iOS) e Advertising ID</h2>
-<p>En iOS, antes de que AdMob utilice cualquier identificador de seguimiento, Compresser muestra la solicitud del sistema de <strong>Transparencia de Seguimiento de Aplicaciones</strong>. Si la deniega, Compresser solo mostrará anuncios no personalizados.</p>
-<p>En Android, puede restablecer o limitar su Advertising ID en <strong>Configuración → Google → Anuncios</strong>. Elegir "Eliminar ID de publicidad" evita que AdMob utilice un identificador personal; los anuncios no personalizados seguirán mostrándose.</p>
+<p>En iOS, antes de que Unity Ads utilice cualquier identificador de seguimiento, Compresser muestra la solicitud del sistema de <strong>Transparencia de Seguimiento de Aplicaciones</strong>. Si la deniega, Compresser solo mostrará anuncios no personalizados.</p>
+<p>En Android, puede restablecer o limitar su Advertising ID en <strong>Configuración → Google → Anuncios</strong>. Elegir "Eliminar ID de publicidad" evita que Unity Ads utilice un identificador personal; los anuncios no personalizados seguirán mostrándose.</p>
 <h2>14. Compras dentro de la aplicación</h2>
 <p>Compresser ofrece los siguientes productos dentro de la aplicación a través de Apple App Store y Google Play: desbloqueo de por vida, bote de propinas opcional, suscripción anual premium.</p>
 <p>Todos los datos de pago son gestionados por <strong>Apple Inc.</strong> (cuenta de App Store / iTunes) o <strong>Google LLC</strong> (Play Billing). Nunca vemos su número de tarjeta, su dirección de facturación o su cuenta completa de Apple ID / Google. Apple y Google devuelven solo un token de compra opaco y metadatos de derecho que utilizamos para desbloquear funciones. Las suscripciones se pueden cancelar en cualquier momento en la Configuración de iOS → Apple ID → Suscripciones o en la aplicación Google Play → Suscripciones; las reglas de cancelación se rigen por Apple / Google.</p>

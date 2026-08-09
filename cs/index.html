@@ -77,7 +77,7 @@
 <p>Pro verzi aplikace distribuovanou přes Google Play je správcem údajů LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
 <p>Tyto Zásady ochrany osobních údajů vysvětlují, jaké osobní údaje Compresser zpracovává, jak, proč a jaká máte práva.</p>
 <h2>2. Shrnutí v jednoduchém jazyce</h2>
-<p>Compresser běží zcela na vašem zařízení – vaše soubory se nikdy nenahrávají na naše servery. Integrujeme Google AdMob pro bannerové a intersticiální reklamy, Sentry pro hlášení pádů a Apple / Google billing pro nákupy v aplikaci. Neshromažďujeme vaše jméno, e-mail, adresu ani přesnou polohu. Máte úplná práva GDPR včetně přístupu, výmazu a přenositelnosti – většinu z nich můžete uplatnit přímo v aplikaci nebo písemně na mail@macsiem.dev.</p>
+<p>Compresser běží zcela na vašem zařízení – vaše soubory se nikdy nenahrávají na naše servery. Integrujeme Unity Ads pro bannerové a intersticiální reklamy, Sentry pro hlášení pádů a Apple / Google billing pro nákupy v aplikaci. Neshromažďujeme vaše jméno, e-mail, adresu ani přesnou polohu. Máte úplná práva GDPR včetně přístupu, výmazu a přenositelnosti – většinu z nich můžete uplatnit přímo v aplikaci nebo písemně na mail@macsiem.dev.</p>
 <h2>3. Údaje, které zpracováváme</h2>
 <h3>3.1 Pouze lokální údaje</h3>
 <p>Aplikace ukládá lokálně na vašem zařízení:</p>
@@ -95,13 +95,12 @@
 <li>verzi a číslo sestavení aplikace.</li>
 </ul>
 <p>Sentry <strong>neshromažďuje</strong> váš obsah (záznamy, soubory, očkovací průkazy, fotografie, archivy), uživatelská jména ani jiné PII. Diagnostická data jsou společností Sentry uchovávána po dobu až <strong>90 dnů</strong>.</p>
-<h3>3.4 Reklama (AdMob)</h3>
-<p>Compresser zobrazuje neinvazivní reklamy na obrazovkách Domů, Výsledek a Nastavení (banner) a dále intersticiální reklamy po dávkách komprese. Reklamy jsou doručovány společností <strong>Google AdMob</strong>, jejíž SDK shromažďuje:</p>
+<h3>3.4 Reklama (Unity Ads)</h3>
+<p>Compresser zobrazuje neinvazivní reklamy na obrazovkách Domů, Výsledek a Nastavení (banner) a dále intersticiální reklamy po dávkách komprese. Reklamy jsou doručovány společností <strong>Unity Ads</strong>, jejíž SDK shromažďuje:</p>
 <ul>
 <li><strong>Reklamní ID</strong> (Android Advertising ID / Apple IDFA), sdílené se společností Google pro zobrazování reklam;</li>
 <li>diagnostická data (model zařízení, poloha na úrovni země, jazyk).</li>
 </ul>
-<p>Ads may also be served by AdMob mediation partners: Meta Platforms, Inc. (<a href="https://www.facebook.com/privacy/policy/">Meta Audience Network</a>) and Unity Technologies (<a href="https://unity.com/legal/privacy-policy">Unity Ads</a>).</p>
 <p>Výchozí režim je <strong>nepersonalizovaná reklama</strong>. Na iOS systémový požadavek App Tracking Transparency (ATT) žádá o váš souhlas před použitím jakéhokoli identifikátoru pro sledování; na Androidu ovládáte Reklamní ID v systémových Nastaveních. Reklamy lze trvale zakázat prostřednictvím Lifetime / Premium IAP.</p>
 <h3>3.5 Nákupy v aplikaci (IAP)</h3>
 <p>Compresser nabízí placené funkce prostřednictvím Apple In-App Purchase (iOS) a Google Play Billing (Android). Když provedete nákup:</p>
@@ -132,7 +131,7 @@
 <ul>
 <li><strong>Spouštění aplikace na vašem zařízení</strong> – lokální úložiště a (pokud je přítomno) šifrování umožňují uchování vašich dat mezi relacemi.</li>
 <li><strong>Zlepšení stability</strong> – diagnostika Sentry pomáhá opravovat pády, které ovlivňují vaše používání.</li>
-<li><strong>Udržování bezplatné verze</strong> – AdMob dodává neinvazivní reklamy pro financování uživatelů, kteří si nekupují prémiovou verzi.</li>
+<li><strong>Udržování bezplatné verze</strong> – Unity Ads dodává neinvazivní reklamy pro financování uživatelů, kteří si nekupují prémiovou verzi.</li>
 <li><strong>Zpracování nákupů</strong> – Apple / Google billing plní prémiová oprávnění, která se rozhodnete zakoupit.</li>
 </ul>
 <h2>5. Právní základ (GDPR článek 6)</h2>
@@ -148,8 +147,6 @@
 <table>
 <thead><tr><th>Příjemce</th><th>Účel</th><th>Kategorie dat</th><th>Zásady ochrany osobních údajů</th></tr></thead>
 <tbody>
-<tr><td>Google LLC (AdMob)</td><td>Zobrazování reklam</td><td>Reklamní ID, metriky zařízení a reklamy</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-<tr><td>Meta Platforms, Inc. (Meta Audience Network)</td><td>Zobrazování reklam</td><td>Reklamní ID, metriky zařízení a reklamy</td><td><a href="https://www.facebook.com/privacy/policy/">https://www.facebook.com/privacy/policy/</a></td></tr>
 <tr><td>Unity Technologies (Unity Ads)</td><td>Zobrazování reklam</td><td>Reklamní ID, metriky zařízení a reklamy</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
 <tr><td>Functional Software Inc. (Sentry)</td><td>Hlášení pádů</td><td>Stack trace, metadata zařízení</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
 <tr><td>Apple Inc. (App Store / IAP)</td><td>Zpracování nákupů v aplikaci na iOS</td><td>Nákupní token, oprávnění na úrovni účtu</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
@@ -169,7 +166,7 @@
 <thead><tr><th>Údaje</th><th>Kde jsou uloženy</th><th>Jak dlouho</th></tr></thead>
 <tbody>
 <tr><td>Vaše data v aplikaci</td><td>Pouze ve vašem zařízení</td><td>Dokud je nesmažete, neodinstalujete aplikaci nebo nevymažete data aplikace</td></tr>
-<tr><td>Reklamní ID</td><td>Systémy Google AdMob</td><td>Podle zásad uchování společnosti Google (obvykle až 14 měsíců pro metriky reklam)</td></tr>
+<tr><td>Reklamní ID</td><td>Systémy Unity Ads</td><td>Podle zásad uchování společnosti Unity</td></tr>
 <tr><td>Data o pádech Sentry</td><td>Systémy Sentry</td><td>Až 90 dnů od události</td></tr>
 <tr><td>Nákupní token / potvrzení IAP</td><td>Vaše zařízení + Apple / Google</td><td>Dokud neodinstalujete; Apple / Google uchovávají záznamy transakcí podle svých vlastních zásad</td></tr>
 </tbody></table>
@@ -201,8 +198,8 @@
 </ul>
 <p>Žádný systém není 100% bezpečný; udržujte prosím své zařízení aktualizované a používejte silné zámky zařízení.</p>
 <h2>13. App Tracking Transparency (iOS) a reklamní ID</h2>
-<p>Na iOS, před použitím jakéhokoli sledovacího identifikátoru společností AdMob, Compresser zobrazí systémový požadavek <strong>App Tracking Transparency</strong>. Pokud odmítnete, Compresser zobrazuje pouze nepersonalizované reklamy.</p>
-<p>Na Androidu můžete resetovat nebo omezit své reklamní ID v <strong>Nastavení → Google → Reklamy</strong>. Volba „Smazat reklamní ID“ zabrání AdMobu v používání osobního identifikátoru; nepersonalizované reklamy se budou nadále zobrazovat.</p>
+<p>Na iOS, před použitím jakéhokoli sledovacího identifikátoru společností Unity Ads, Compresser zobrazí systémový požadavek <strong>App Tracking Transparency</strong>. Pokud odmítnete, Compresser zobrazuje pouze nepersonalizované reklamy.</p>
+<p>Na Androidu můžete resetovat nebo omezit své reklamní ID v <strong>Nastavení → Google → Reklamy</strong>. Volba „Smazat reklamní ID“ zabrání Unity Adsu v používání osobního identifikátoru; nepersonalizované reklamy se budou nadále zobrazovat.</p>
 <h2>14. Nákupy v aplikaci</h2>
 <p>Compresser nabízí následující produkty v aplikaci prostřednictvím Apple App Store a Google Play: doživotní odemčení, volitelná spropitné, roční prémiové předplatné.</p>
 <p>Všechna platební data zpracovává <strong>Apple Inc.</strong> (účet App Store / iTunes) nebo <strong>Google LLC</strong> (Play Billing). Nikdy nevidíme číslo vaší karty, vaši fakturační adresu ani vaše celé Apple ID / Google účet. Apple a Google vrátí pouze neprůhledný nákupní token a metadata oprávnění, která používáme k odemčení funkcí. Předplatné lze kdykoli zrušit v Nastavení iOS → Apple ID → Předplatné nebo v aplikaci Google Play → Předplatné; pravidla pro zrušení se řídí společností Apple / Google.</p>
