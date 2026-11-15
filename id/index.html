@@ -70,145 +70,28 @@
     </div>
 
 <h1>Kebijakan Privasi — Compresser</h1>
-<p>Terakhir diperbarui: 2026-05-06 · Tanggal berlaku: 2026-05-06</p>
-<h2>1. Siapa kami</h2>
-<p><strong>Compresser</strong> adalah aplikasi seluler untuk <strong>kompresi di perangkat</strong> gambar, video, file audio, dan PDF. Privasi adalah hal mendasar: kompresi berjalan <strong>secara lokal di perangkat Anda</strong> dan file Anda <strong>tidak pernah diunggah ke server kami</strong> — file tersebut tidak pernah meninggalkan perangkat untuk dibaca, disalin, atau dianalisis oleh pihak ketiga mana pun.</p>
-<p><strong>Pengontrol data:</strong> Maciej Siemiński — pengembang Compresser. <strong>Kontak:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Untuk versi aplikasi yang didistribusikan melalui Google Play, pengendali data adalah LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
-<p>Kebijakan Privasi ini menjelaskan data pribadi apa yang Compresser proses, bagaimana, mengapa, dan hak apa yang Anda miliki.</p>
-<h2>2. Ringkasan sederhana</h2>
-<p>Compresser berjalan sepenuhnya di perangkat Anda — file Anda tidak pernah diunggah ke server kami. Kami mengintegrasikan Unity Ads untuk iklan banner dan interstisial, Sentry untuk pelaporan kerusakan, dan penagihan Apple / Google untuk pembelian dalam aplikasi. Kami tidak mengumpulkan nama, email, alamat, atau lokasi tepat Anda. Anda memiliki hak GDPR penuh termasuk akses, penghapusan, dan portabilitas — sebagian besar dapat dilaksanakan langsung di aplikasi atau dengan menulis ke mail@macsiem.dev.</p>
-<h2>3. Data yang kami proses</h2>
-<h3>3.1 Data hanya-lokal</h3>
-<p>Aplikasi menyimpan secara lokal di perangkat Anda:</p>
-<ul>
-<li>preferensi pengguna (kualitas kompresi, format default, tema),</li>
-<li>tanda penyelesaian orientasi,</li>
-<li>riwayat kompresi (stempel waktu dan statistik per-file — <strong>tanpa konten file</strong>).</li>
-</ul>
-<p>Data ini disimpan sepenuhnya di perangkat Anda dan tidak pernah dikirimkan ke server kami atau pihak ketiga mana pun.</p>
-<h3>3.3 Data diagnostik (Sentry)</h3>
-<p>Compresser mengintegrasikan Sentry (sentry.io) untuk pelaporan kerusakan dan kesalahan. Sentry mengumpulkan:</p>
-<ul>
-<li>pelacakan tumpukan kesalahan (log kerusakan),</li>
-<li>info perangkat (model, versi OS, lokal),</li>
-<li>versi aplikasi dan nomor build.</li>
-</ul>
-<p>Sentry <strong>tidak</strong> mengumpulkan konten Anda (entri, file, catatan vaksinasi, foto, arsip), nama pengguna, atau PII lainnya. Data diagnostik disimpan oleh Sentry hingga <strong>90 hari</strong>.</p>
-<h3>3.4 Periklanan (Unity Ads)</h3>
-<p>Compresser menampilkan iklan non-invasif di Beranda, Hasil, dan Pengaturan (banner) ditambah interstisial setelah proses kompresi. Iklan disampaikan oleh <strong>Unity Ads</strong>, yang SDK-nya mengumpulkan:</p>
-<ul>
-<li><strong>ID Iklan</strong> (Android Advertising ID / Apple IDFA), dibagikan dengan Google untuk menayangkan iklan;</li>
-<li>data diagnostik (model perangkat, lokasi tingkat negara, bahasa).</li>
-</ul>
-<p>Mode default adalah <strong>iklan non-personalisasi</strong>. Di iOS, perintah App Tracking Transparency (ATT) meminta persetujuan Anda sebelum pengenal tingkat pelacakan apa pun digunakan; di Android Anda mengontrol ID Iklan di bawah Pengaturan sistem. Iklan dapat dinonaktifkan secara permanen melalui IAP Seumur Hidup / Premium.</p>
-<h3>3.5 Pembelian dalam aplikasi (IAP)</h3>
-<p>Compresser menawarkan fitur berbayar melalui Pembelian Dalam Aplikasi Apple (iOS) dan Penagihan Google Play (Android). Saat Anda melakukan pembelian:</p>
-<ul>
-<li>Apple / Google memproses semua data kartu dan akun — <strong>kami tidak pernah melihat nomor kartu Anda, alamat penagihan, atau informasi akun lengkap Anda</strong>;</li>
-<li>Apple / Google mengembalikan token pembelian / tanda terima transaksi yang Compresser simpan secara lokal untuk memvalidasi hak;</li>
-<li>pemulihan pembelian mengambil ulang hak Anda yang ada dari Apple / Google.</li>
-</ul>
-<p>Produk yang tersedia: pembukaan kunci seumur hidup, kotak tip opsional, langganan premium tahunan.</p>
-<h3>3.6 Izin perangkat</h3>
-<ul>
-<li><strong>Foto / Media</strong> (<code>READ_MEDIA_IMAGES</code> / <code>PHPhotoLibrary</code>): menambah atau memproses gambar dari galeri (opsional kecuali diperlukan untuk fungsi inti aplikasi).</li>
-<li><strong>File</strong> (<code>READ_EXTERNAL_STORAGE</code> / iOS Files): memilih dokumen/arsip (hanya saat Anda memilih file).</li>
-<li><strong>Notifikasi</strong> (<code>POST_NOTIFICATIONS</code> / <code>UNUserNotificationCenter</code>): pengingat dan status operasi (opsional).</li>
-<li><strong>Getar</strong> (<code>VIBRATE</code>): umpan balik UI haptik (opsional).</li>
-</ul>
-<p>Setiap izin diminta secara kontekstual. Anda dapat menolak izin apa pun dan tetap menggunakan fitur inti (jika berlaku).</p>
-<h3>3.7 Apa yang TIDAK kami kumpulkan</h3>
-<ul>
-<li>Nama, email, nomor telepon, alamat Anda (tidak diperlukan akun).</li>
-<li>Daftar kontak, kalender, SMS, log panggilan.</li>
-<li>Lokasi tepat.</li>
-<li>Riwayat penelusuran di luar aplikasi.</li>
-<li>Data biometrik (Face ID / Touch ID hanya digunakan sebagai kunci tingkat sistem dan tidak pernah meninggalkan perangkat Anda).</li>
-<li>Data kesehatan, keuangan, atau kartu pembayaran.</li>
-</ul>
-<h2>4. Mengapa kami memproses data ini (tujuan)</h2>
-<ul>
-<li><strong>Menjalankan aplikasi di perangkat Anda</strong> — penyimpanan lokal dan (jika ada) enkripsi memungkinkan data Anda tetap ada di antara sesi.</li>
-<li><strong>Meningkatkan stabilitas</strong> — diagnostik Sentry membantu memperbaiki kerusakan yang memengaruhi penggunaan Anda.</li>
-<li><strong>Mempertahankan tingkat gratis</strong> — Unity Ads memberikan iklan non-invasif untuk mendanai pengguna yang tidak membeli premium.</li>
-<li><strong>Memproses pembelian</strong> — penagihan Apple / Google memenuhi hak premium yang Anda pilih untuk dibeli.</li>
-</ul>
-<h2>5. Dasar hukum (GDPR Art. 6)</h2>
-<p>Untuk pengguna di Wilayah Ekonomi Eropa, Britania Raya, dan Swiss:</p>
-<ul>
-<li><strong>Pelaksanaan kontrak</strong> (GDPR Art. 6(1)(b)) — menjalankan aplikasi, memproses pembelian Anda.</li>
-<li><strong>Kepentingan sah</strong> (GDPR Art. 6(1)(f)) — diagnostik Sentry, pencegahan penipuan/penyalahgunaan, iklan non-personalisasi. Kepentingan kami adalah meningkatkan stabilitas dan mempertahankan tingkat gratis; ini tidak mengesampingkan hak-hak dasar Anda.</li>
-<li><strong>Persetujuan</strong> (GDPR Art. 6(1)(a)) — iklan personalisasi, di mana Anda memberikan persetujuan melalui perintah ATT (iOS) atau preferensi dalam aplikasi. Anda dapat menarik persetujuan kapan saja tanpa memengaruhi pemrosesan sebelumnya.</li>
-<li><strong>Kewajiban hukum</strong> (GDPR Art. 6(1)(c)) — hanya ketika kami harus menanggapi permintaan yang sah dari pihak berwenang.</li>
-</ul>
-<h2>6. Penerima (dengan siapa kami berbagi data)</h2>
-<p>Kami <strong>tidak menjual</strong> data pribadi. Kategori penerima terbatas pada penyedia yang mutlak diperlukan untuk menjalankan aplikasi:</p>
-<table>
-<thead><tr><th>Penerima</th><th>Tujuan</th><th>Kategori data</th><th>Kebijakan privasi</th></tr></thead>
-<tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Menayangkan iklan</td><td>ID Iklan, metrik perangkat &amp; iklan</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
-<tr><td>Functional Software Inc. (Sentry)</td><td>Pelaporan kerusakan</td><td>Pelacakan tumpukan, metadata perangkat</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
-<tr><td>Apple Inc. (App Store / IAP)</td><td>Pemrosesan pembelian dalam aplikasi di iOS</td><td>Token pembelian, hak tingkat akun</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Play Billing)</td><td>Pemrosesan pembelian dalam aplikasi di Android</td><td>Token pembelian, hak tingkat akun</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-</tbody></table>
-<p>Kami dapat mengungkapkan data jika diwajibkan oleh perintah pengadilan yang sah atau proses hukum mengikat lainnya, setelah memverifikasi permintaan dan memberitahu Anda jika sah.</p>
-<h2>7. Transfer internasional</h2>
-<p>Beberapa penerima di atas berlokasi di luar Wilayah Ekonomi Eropa (terutama di Amerika Serikat). Jika terjadi transfer, transfer tersebut dilindungi oleh:</p>
-<ul>
-<li><strong>keputusan kecukupan Komisi Eropa</strong> (EU-US Data Privacy Framework) untuk penyedia yang bersertifikat di bawah Kerangka Kerja, termasuk Google LLC;</li>
-<li><strong>Klausul Kontrak Standar (SCC)</strong> sebagaimana diadopsi oleh Komisi Eropa, dilengkapi dengan perlindungan tambahan jika berlaku;</li>
-<li>mekanisme transfer yang diterbitkan sendiri oleh penerima (misalnya, komitmen privasi perusahaan yang mengikat dari Apple).</li>
-</ul>
-<p>Anda dapat meminta salinan perlindungan yang relevan dengan menulis ke <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
-<h2>8. Retensi data</h2>
-<table>
-<thead><tr><th>Data</th><th>Tempat penyimpanan</th><th>Berapa lama</th></tr></thead>
-<tbody>
-<tr><td>Data dalam aplikasi Anda</td><td>Hanya perangkat Anda</td><td>Sampai Anda menghapusnya, mencopot pemasangan aplikasi, atau menghapus data aplikasi</td></tr>
-<tr><td>Advertising ID</td><td>Unity Ads systems</td><td>Sesuai kebijakan retensi Unity</td></tr>
-<tr><td>Sentry crash data</td><td>Sentry systems</td><td>Hingga 90 hari sejak kejadian</td></tr>
-<tr><td>IAP purchase token / receipt</td><td>Your device + Apple / Google</td><td>Sampai Anda mencopot pemasangan; Apple / Google menyimpan catatan transaksi sesuai kebijakan mereka sendiri</td></tr>
-</tbody></table>
-<h2>9. Hak Anda (GDPR Art. 15–22)</h2>
-<p>Anda memiliki hak-hak berikut mengenai data pribadi Anda:</p>
-<ul>
-<li><strong>Hak akses (GDPR Art. 15)</strong> — konfirmasi apakah kami memproses data Anda dan salinannya. Sebagian besar data Anda sudah ada di perangkat Anda; ekspor dari aplikasi atau tulis kepada kami untuk sisanya.</li>
-<li><strong>Hak untuk perbaikan (GDPR Art. 16)</strong> — memperbaiki data yang tidak akurat. Edit data langsung di aplikasi.</li>
-<li><strong>Hak untuk penghapusan / "hak untuk dilupakan" (GDPR Art. 17)</strong> — hapus semua data melalui Pengaturan → "Hapus semua data", atau dengan mencopot pemasangan aplikasi.</li>
-<li><strong>Hak untuk membatasi pemrosesan (GDPR Art. 18)</strong> — meminta penghentian sementara; tulis kepada kami.</li>
-<li><strong>Hak untuk portabilitas data (GDPR Art. 20)</strong> — Pengaturan → "Ekspor data" menghasilkan bundel JSON / Markdown.</li>
-<li><strong>Hak untuk menolak (GDPR Art. 21)</strong> — menolak pemrosesan berdasarkan kepentingan sah, terutama iklan bergaya profil. Nonaktifkan iklan personalisasi di pengaturan aplikasi atau melalui kontrol sistem.</li>
-<li><strong>Hak untuk tidak menjadi subjek keputusan otomatis (GDPR Art. 22)</strong> — Compresser tidak membuat keputusan otomatis dengan efek hukum atau yang signifikan serupa tentang Anda.</li>
-</ul>
-<p>Untuk menggunakan hak apa pun, tulis ke <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Kami menanggapi dalam waktu 30 hari (dapat diperpanjang 60 hari untuk permintaan kompleks, dengan pemberitahuan).</p>
-<h2>10. Hak untuk mengajukan keluhan (GDPR Art. 77)</h2>
-<p>Jika Anda yakin kami memproses data Anda secara tidak sah, Anda dapat mengajukan keluhan kepada otoritas pengawas. Untuk penduduk Polandia:</p>
-<p>Prezes Urzędu Ochrony Danych Osobowych (PUODO) ul. Stawki 2, 00-193 Warszawa, Poland <a href="https://uodo.gov.pl">https://uodo.gov.pl</a></p>
-<p>Anda juga dapat mengajukan keluhan kepada otoritas pengawas di tempat tinggal Anda yang biasa, tempat kerja, atau tempat dugaan pelanggaran di negara EEA lainnya.</p>
-<h2>11. Privasi anak-anak</h2>
-<p>Compresser adalah <strong>tidak ditujukan untuk anak-anak di bawah 13 tahun</strong> (di bawah 16 tahun jika berlaku menurut hukum setempat). Kami tidak dengan sengaja mengumpulkan data pribadi dari anak-anak di bawah usia tersebut. Jika Anda yakin seorang anak telah memberikan data pribadi kepada kami tanpa persetujuan orang tua, hubungi kami di <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> dan kami akan menghapusnya segera.</p>
-<p>Bendera Apple / Google "Dirancang untuk Keluarga" / "Usia 5+" <strong>tidak</strong> diatur pada Compresser — aplikasi ini dinilai untuk audiens umum 13+.</p>
-<h2>12. Keamanan</h2>
-<ul>
-<li><strong>Operasi hanya-lokal</strong> — kompresi berjalan sepenuhnya di memori perangkat; file asli dan terkompresi tidak pernah meninggalkan perangkat Anda.</li>
-<li><strong>Keamanan transportasi</strong> — semua panggilan jaringan (iklan, IAP, diagnostik Sentry) menggunakan HTTPS / TLS 1.2+.</li>
-<li><strong>Minimalisasi</strong> — kami hanya mengumpulkan apa yang diperlukan untuk tujuan yang tercantum.</li>
-<li><strong>Tidak ada cadangan konten file ke server kami</strong> — metadata file (ukuran, format, stempel waktu) dapat disimpan untuk riwayat dalam aplikasi, tetapi konten file tidak.</li>
-</ul>
-<p>Tidak ada sistem yang 100% aman; harap perbarui perangkat Anda dan gunakan kunci perangkat yang kuat.</p>
-<h2>13. Transparansi Pelacakan Aplikasi (iOS) dan ID Iklan</h2>
-<p>Di iOS, sebelum pengenal tingkat pelacakan apa pun digunakan oleh Unity Ads, Compresser menampilkan perintah sistem <strong>App Tracking Transparency</strong>. Jika Anda menolak, Compresser hanya menyajikan iklan non-personalisasi.</p>
-<p>Di Android, Anda dapat mengatur ulang atau membatasi ID Iklan Anda di bawah <strong>Pengaturan → Google → Iklan</strong>. Memilih "Hapus ID iklan" menghentikan Unity Ads menggunakan pengenal pribadi; iklan non-personalisasi tetap ditampilkan.</p>
-<h2>14. Pembelian dalam aplikasi</h2>
-<p>Compresser menawarkan produk dalam aplikasi berikut melalui Apple App Store dan Google Play: pembukaan kunci seumur hidup, kotak tip opsional, langganan premium tahunan.</p>
-<p>Semua data pembayaran ditangani oleh <strong>Apple Inc.</strong> (Akun App Store / iTunes) atau <strong>Google LLC</strong> (Penagihan Play). Kami tidak pernah melihat nomor kartu Anda, alamat penagihan Anda, atau akun Apple ID / Google lengkap Anda. Apple dan Google hanya mengembalikan token pembelian buram dan metadata hak yang kami gunakan untuk membuka fitur. Langganan dapat dibatalkan kapan saja di Pengaturan iOS → ID Apple → Langganan atau di aplikasi Google Play → Langganan; aturan pembatalan diatur oleh Apple / Google.</p>
-<h2>15. Perubahan pada kebijakan ini</h2>
-<p>Kami dapat memperbarui kebijakan ini seiring perubahan aplikasi, SDK pihak ketiga, atau hukum yang berlaku. Perubahan material akan diumumkan dalam aplikasi dan tanggal "Terakhir diperbarui" di bagian atas akan berubah. Melanjutkan penggunaan Compresser setelah perubahan berarti menerima kebijakan yang diperbarui.</p>
-<h2>16. Kontak</h2>
-<p>Untuk pertanyaan privasi, pelaksanaan hak, atau kekhawatiran tentang kebijakan ini:</p>
-<p><strong>Maciej Siemiński</strong> Email: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Versi kanonis kebijakan ini: <a href="https://macsiem.github.io/compresser-privacy/">https://macsiem.github.io/compresser-privacy/</a> Sumber: <a href="https://github.com/MacSiem/compresser-privacy">https://github.com/MacSiem/compresser-privacy</a></p>
+<p>Terakhir diperbarui: 15 November 2026</p>
+<h2>1. Pengendali dan kontak</h2>
+<p>Untuk versi iOS, pengendali data adalah Maciej Siemiński. Untuk versi Google Play, pengendali data adalah LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polandia. Kontak untuk keduanya: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>2. Kompresi dan data lokal</h2>
+<p>Compresser memikompresi gambar, video, audio, dan file PDF di perangkat Anda. Proses kompresi sendiri tidak mengunggah file Anda. Aplikasi ini menyimpan pengaturan, statistik, dan riwayat kompresi secara lokal, termasuk nama file, jenis, ukuran, dan tanggal. Fitur dan layanan opsional lain yang dijelaskan di bawah ini dapat mentransfer data.</p>
+<h2>3. Cadangan dan ekspor opsional</h2>
+<p>Saat Anda secara eksplisit memulai pencadangan atau pemulihan, aplikasi menggunakan akun yang dipilih: appData Google Drive atau database privat Apple CloudKit di iOS. Cadangan dapat berisi pengaturan, statistik, riwayat, dan file asli yang tersedia. Cadangan ini dienkripsi, tetapi kunci enkripsi disimpan di akun yang sama dengan cadangan tersebut; ini bukan enkripsi ujung ke ujung (end-to-end) terhadap penyedia akun. Kelola atau hapus salinan cloud melalui kontrol akun dan penyedia Anda. Ekspor lokal akan disimpan ke tujuan yang Anda pilih; lindungi dan hapus salinan tersebut sendiri.</p>
+<h2>4. Pemberitahuan opsional</h2>
+<p>Jika Anda mengaktifkan pengumuman dan memberikan izin sistem, aplikasi akan mendaftarkan token dorong (push token) Expo dan ID perangkat acak persisten ke backend Cloudflare kami, beserta platform, bahasa, versi aplikasi, status langganan premium, dan saluran rilis. Pendaftaran dan tanggal waktu aktivitas juga dapat disimpan. Layanan Notifikasi Dorong Expo dan Apple (APNs) atau Firebase Cloud Messaging (FCM) membantu mengirimkan pemberitahuan. Aplikasi memperbarui pendaftaran saat diaktifkan.</p>
+<p>Anda dapat mematikan pengumuman di dalam aplikasi dan mengubah izin pemberitahuan di pengaturan perangkat. Setelah permintaan penonaktifan yang berhasil, backend akan menghapus token dan metadata pendaftaran dari catatan otoritatif dan indeks Cloudflare KV-nya. Revisi pseudonim, penanda penghapusan (tombstone), dan ID operasi penghapusan yang terkait dengan ID perangkat acak akan tetap ada untuk mencegah pendaftaran yang kedaluwarsa. Hubungi kami untuk permintaan penghapusan. Tidak ada periode penyimpanan khusus yang ditegaskan di sini.</p>
+<h2>5. Diagnostik, periklanan, dan pembelian</h2>
+<p>Sentry menerima peristiwa diagnostik seperti crash, jejak tumpukan (stack trace), versi aplikasi, serta informasi perangkat atau sistem operasi untuk membantu kami memperbaiki kesalahan. Aplikasi memofilter peristiwa diagnostik dan menyunting teks bebas serta pesan pengecualian; filter ini tidak menggambarkan setiap kemungkinan transmisi oleh SDK asli. Lihat kebijakan privasi Sentry untuk praktiknya.</p>
+<p>Unity Ads menyediakan periklanan. SDK-nya dapat memproses pengenal iklan, informasi perangkat, dan data interaksi iklan untuk menayangkan serta mengukur iklan, tunduk pada pengaturan perangkat dan pilihan persetujuan yang berlaku. Lihat kebijakan privasi Unity. Apple atau Google memproses pembelian dalam aplikasi dan informasi akun/pembayaran di bawah kebijakan mereka sendiri; aplikasi menggunakan informasi pembelian untuk menyediakan atau memulihkan hak akses (entitlements).</p>
+<h2>6. Tujuan, dasar hukum, dan penerima</h2>
+<p>Kami menggunakan data untuk mengoperasikan aplikasi, melakukan pencadangan dan pemulihan yang Anda minta, mengirimkan pemberitahuan yang Anda aktifkan, mendiagnosis kesalahan, menyediakan periklanan, dan memproses pembelian. Bergantung pada pemrosesan dan hukum yang berlaku, dasar hukumnya mungkin berupa pelaksanaan kontrak, persetujuan, kepentingan sah, atau kewajiban hukum. Jika persetujuan diperlukan, Anda dapat menariknya tanpa memengaruhi pemrosesan sebelumnya. Penyedia meliputi Google, Apple, Cloudflare, Expo, Sentry, dan Unity; masing-masing memproses data untuk layanan yang relevan. Transfer internasional dapat terjadi di bawah pengamanan yang berlaku.</p>
+<h2>7. Penyimpanan dan pilihan Anda</h2>
+<p>Data aplikasi lokal tetap ada hingga Anda menghapusnya atau membersihkan data aplikasi, tunduk pada perilaku sistem operasi. Cadangan dan ekspor cloud dapat tetap ada setelah menghapus instalan aplikasi dan harus dikelola secara terpisah. Catatan pemberitahuan dijelaskan di atas. Sentry, Unity, Apple, dan Google menerapkan praktik penyimpanan mereka sendiri; hubungi kami untuk pertanyaan tentang data yang kami kendalikan.</p>
+<p>Bergantung pada hukum yang berlaku, Anda dapat meminta akses, koreksi, penghapusan, pembatasan, portabilitas, atau keberatan atas pemrosesan, dan Anda dapat mengeluh kepada otoritas pengawas. Hak-hak ini dapat tunduk pada ketentuan dan pengecualian. Hubungi <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Menghapus instalan aplikasi saja tidak menghapus salinan cloud atau catatan pihak ketiga.</p>
+<h2>8. Keamanan, anak-anak, dan perubahan</h2>
+<p>Kami menggunakan pengamanan yang sesuai dengan layanan, tetapi tidak ada sistem yang sepenuhnya aman. Aplikasi ini tidak ditujukan untuk anak-anak di bawah usia 13 tahun; hubungi kami jika Anda yakin seorang anak telah memberikan data pribadi. Kami dapat memperbarui kebijakan ini dan mengubah tanggal di atas saat praktik berubah.</p>
+<h2>Kebijakan privasi penyedia dan sumber</h2>
+<ul><li><a href="https://www.apple.com/legal/privacy/">Kebijakan privasi Apple</a></li><li><a href="https://policies.google.com/privacy">Kebijakan privasi Google</a></li><li><a href="https://www.cloudflare.com/privacypolicy/">Kebijakan privasi Cloudflare</a></li><li><a href="https://expo.dev/privacy">Kebijakan privasi Expo</a></li><li><a href="https://sentry.io/privacy/">Kebijakan privasi Sentry</a></li><li><a href="https://unity.com/legal/privacy-policy">Kebijakan privasi Unity</a></li><li><a href="https://macsiem.github.io/compresser-privacy/">Kebijakan kanonis</a></li><li><a href="https://github.com/MacSiem/compresser-privacy">Repositori sumber</a></li><li><a href="https://uodo.gov.pl">UODO</a></li></ul>
 
     <footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/compresser-privacy/">macsiem.github.io/compresser-privacy/</a></footer>
 </div>
