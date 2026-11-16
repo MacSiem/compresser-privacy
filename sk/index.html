@@ -69,146 +69,27 @@
 <a href="../ar/">العربية</a> · <a href="../cs/">Čeština</a> · <a href="../da/">Dansk</a> · <a href="../de/">Deutsch</a> · <a href="../en/">English</a> · <a href="../es/">Español (LatAm)</a> · <a href="../fi/">Suomi</a> · <a href="../fr/">Français</a> · <a href="../hi/">हिन्दी</a> · <a href="../hu/">Magyar</a> · <a href="../id/">Bahasa Indonesia</a> · <a href="../it/">Italiano</a> · <a href="../iw/">עברית</a> · <a href="../ja/">日本語</a> · <a href="../ko/">한국어</a> · <a href="../nl/">Nederlands</a> · <a href="../no/">Norsk</a> · <a href="../pl/">Polski</a> · <a href="../pt/">Português (BR)</a> · <a href="../ro/">Română</a> · <a href="../ru/">Русский</a> · <a class="active">Slovenčina</a> · <a href="../sv/">Svenska</a> · <a href="../th/">ไทย</a> · <a href="../tr/">Türkçe</a> · <a href="../uk/">Українська</a> · <a href="../vi/">Tiếng Việt</a> · <a href="../zh/">简体中文</a>
     </div>
 
-<h1>Zásady ochrany osobných údajov — Compresser</h1>
-<p>Posledná aktualizácia: 2026-05-06 · Dátum účinnosti: 2026-05-06</p>
-<h2>1. Kto sme</h2>
-<p><strong>Compresser</strong> je mobilná aplikácia na <strong>kompresiu</strong> obrázkov, videí, zvukových súborov a PDF <strong>priamo na zariadení</strong>. Súkromie je základné: kompresia prebieha <strong>lokálne na vašom zariadení</strong> a vaše súbory <strong>sa nikdy nenahrávajú na naše servery</strong> — nikdy neopustia zariadenie, aby ich mohla prečítať, skopírovať alebo analyzovať akákoľvek tretia strana.</p>
-<p><strong>Prevádzkovateľ osobných údajov:</strong> Maciej Siemiński — vývojár Compresser. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Pre verziu aplikácie distribuovanú cez Google Play je prevádzkovateľom údajov LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
-<p>Tieto Zásady ochrany osobných údajov vysvetľujú, aké osobné údaje Compresser spracúva, ako, prečo a aké máte práva.</p>
-<h2>2. Zhrnutie v jednoduchom jazyku</h2>
-<p>Compresser beží výhradne na vašom zariadení — vaše súbory sa nikdy nenahrávajú na naše servery. Integrujeme Unity Ads pre bannerové a intersticiálne reklamy, Sentry pre hlásenie pádov a fakturáciu Apple / Google pre nákupy v aplikácii. Nezhromažďujeme vaše meno, e-mail, adresu ani presnú polohu. Máte všetky práva vyplývajúce z GDPR vrátane prístupu, vymazania a prenositeľnosti — väčšinu z nich môžete uplatniť priamo v aplikácii alebo písomne na mail@macsiem.dev.</p>
-<h2>3. Údaje, ktoré spracúvame</h2>
-<h3>3.1 Iba lokálne údaje</h3>
-<p>Aplikácia lokálne na vašom zariadení ukladá:</p>
-<ul>
-<li>užívateľské preferencie (kvalita kompresie, predvolené formáty, téma),</li>
-<li>príznak dokončenia úvodnej obrazovky,</li>
-<li>história kompresie (časové značky a štatistiky pre jednotlivé súbory — <strong>bez obsahu súboru</strong>).</li>
-</ul>
-<p>Tieto údaje sú uložené výhradne na vašom zariadení a nikdy sa neprenášajú na naše servery ani žiadnej tretej strane.</p>
-<h3>3.3 Diagnostické údaje (Sentry)</h3>
-<p>Compresser integruje Sentry (sentry.io) pre hlásenie pádov a chýb. Sentry zhromažďuje:</p>
-<ul>
-<li>stopy chybových zásobníkov (záznamy pádov),</li>
-<li>informácie o zariadení (model, verzia OS, národné prostredie),</li>
-<li>verzia a číslo zostavenia aplikácie.</li>
-</ul>
-<p>Sentry <strong>nezhromažďuje</strong> váš obsah (položky, súbory, záznamy o očkovaní, fotografie, archívy), používateľské mená ani iné PII. Diagnostické údaje uchováva Sentry po dobu až <strong>90 dní</strong>.</p>
-<h3>3.4 Reklama (Unity Ads)</h3>
-<p>Compresser zobrazuje neinvazívne reklamy na obrazovkách Domov, Výsledok a Nastavenia (banner) a tiež intersticiálne reklamy po dávkach kompresie. Reklamy sú poskytované službou <strong>Unity Ads</strong>, ktorej SDK zhromažďuje:</p>
-<ul>
-<li><strong>reklamný identifikátor</strong> (reklamný identifikátor Android / Apple IDFA), zdieľaný so spoločnosťou Google na zobrazovanie reklám;</li>
-<li>diagnostické údaje (model zariadenia, poloha na úrovni krajiny, jazyk).</li>
-</ul>
-<p>Predvolený režim sú <strong>nepersonalizované reklamy</strong>. Na iOS si výzva App Tracking Transparency (ATT) vyžiada váš súhlas predtým, ako sa použije akýkoľvek identifikátor na sledovanie; na Android môžete reklamný identifikátor ovládať v systémových Nastaveniach. Reklamy môžu byť trvalo vypnuté prostredníctvom IAP (nákupu v aplikácii) Lifetime / Premium.</p>
-<h3>3.5 Nákupy v aplikácii (IAP)</h3>
-<p>Compresser ponúka platené funkcie prostredníctvom Apple In-App Purchase (iOS) a Google Play Billing (Android). Keď uskutočníte nákup:</p>
-<ul>
-<li>Apple / Google spracúvajú všetky údaje o karte a účte — <strong>nikdy nevidíme číslo vašej karty, fakturačnú adresu ani úplné informácie o účte</strong>;</li>
-<li>Apple / Google vrátia nákupný token / potvrdenie o transakcii, ktoré Compresser lokálne uloží na overenie nároku;</li>
-<li>obnovenie nákupov znovu načíta vaše existujúce nároky od spoločností Apple / Google.</li>
-</ul>
-<p>Dostupné produkty: doživotné odomknutie, voliteľný tip jar (virtuálna pokladnička), prémiové ročné predplatné.</p>
-<h3>3.6 Povolenia zariadenia</h3>
-<ul>
-<li><strong>Fotografie / Médiá</strong> (<code>READ_MEDIA_IMAGES</code> / <code>PHPhotoLibrary</code>): pridávanie alebo spracovanie obrázkov z galérie (voliteľné, pokiaľ nie je potrebné pre základnú funkciu aplikácie).</li>
-<li><strong>Súbory</strong> (<code>READ_EXTERNAL_STORAGE</code> / iOS Files): výber dokumentov/archívov (iba ak si vyberiete súbor).</li>
-<li><strong>Upozornenia</strong> (<code>POST_NOTIFICATIONS</code> / <code>UNUserNotificationCenter</code>): pripomienky a stav operácií (voliteľné).</li>
-<li><strong>Vibrácie</strong> (<code>VIBRATE</code>): haptická odozva UI (voliteľné).</li>
-</ul>
-<p>Každé povolenie je vyžiadané kontextovo. Môžete odmietnuť akékoľvek povolenie a stále používať základné funkcie (ak je to možné).</p>
-<h3>3.7 Čo NEZHROMAŽĎUJEME</h3>
-<ul>
-<li>Vaše meno, e-mail, telefónne číslo, adresa (nevyžaduje sa žiadny účet).</li>
-<li>Zoznam kontaktov, kalendár, SMS, denníky hovorov.</li>
-<li>Presná poloha.</li>
-<li>História prehliadania mimo aplikácie.</li>
-<li>Biometrické údaje (Face ID / Touch ID sa používa iba ako systémový zámok a nikdy neopúšťa vaše zariadenie).</li>
-<li>Zdravotné, finančné údaje alebo údaje o platobných kartách.</li>
-</ul>
-<h2>4. Prečo spracúvame tieto údaje (účely)</h2>
-<ul>
-<li><strong>Spustenie aplikácie na vašom zariadení</strong> — lokálne úložisko a (ak je prítomné) šifrovanie umožňujú, aby vaše údaje pretrvali medzi reláciami.</li>
-<li><strong>Zlepšenie stability</strong> — diagnostika Sentry pomáha opraviť pády, ktoré ovplyvňujú vaše používanie.</li>
-<li><strong>Udržanie bezplatnej verzie</strong> — Unity Ads dodáva neinvazívne reklamy na financovanie používateľov, ktorí si nekupujú prémiovú verziu.</li>
-<li><strong>Spracovanie nákupov</strong> — fakturácia Apple / Google spĺňa prémiové nároky, ktoré sa rozhodnete zakúpiť.</li>
-</ul>
-<h2>5. Právny základ (čl. 6 GDPR)</h2>
-<p>Pre používateľov v Európskom hospodárskom priestore, Spojenom kráľovstve a Švajčiarsku:</p>
-<ul>
-<li><strong>Plnenie zmluvy</strong> (čl. 6 ods. 1 písm. b)) — prevádzka aplikácie, spracovanie vašich nákupov.</li>
-<li><strong>Oprávnený záujem</strong> (čl. 6 ods. 1 písm. f)) — diagnostika Sentry, prevencia podvodov / zneužitia, nepersonalizovaná reklama. Naším záujmom je zlepšenie stability a udržanie bezplatnej verzie; to neprevažuje nad vašimi základnými právami.</li>
-<li><strong>Súhlas</strong> (čl. 6 ods. 1 písm. a)) — personalizovaná reklama, kde udelíte súhlas prostredníctvom výzvy ATT (iOS) alebo preferencie v aplikácii. Súhlas môžete kedykoľvek odvolať bez toho, aby to ovplyvnilo predchádzajúce spracovanie.</li>
-<li><strong>Zákonná povinnosť</strong> (čl. 6 ods. 1 písm. c)) — iba vtedy, keď musíme reagovať na zákonnú požiadavku od úradov.</li>
-</ul>
-<h2>6. Príjemcovia (s kým zdieľame údaje)</h2>
-<p>Osobné údaje <strong>nepredávame</strong>. Kategórie príjemcov sú obmedzené na poskytovateľov, ktorí sú nevyhnutne potrební na prevádzku aplikácie:</p>
-<table>
-<thead><tr><th>Príjemca</th><th>Účel</th><th>Kategória údajov</th><th>Zásady ochrany osobných údajov</th></tr></thead>
-<tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Zobrazovanie reklám</td><td>Reklamný identifikátor, metriky zariadenia a reklamy</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
-<tr><td>Functional Software Inc. (Sentry)</td><td>Hlásenie pádov</td><td>Stopy zásobníkov, metadáta zariadenia</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
-<tr><td>Apple Inc. (App Store / IAP)</td><td>Spracovanie nákupov v aplikácii na iOS</td><td>Token nákupu, nárok na úrovni účtu</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Play Billing)</td><td>Spracovanie nákupov v aplikácii na Android</td><td>Token nákupu, nárok na úrovni účtu</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-</tbody></table>
-<p>Údaje môžeme zverejniť, ak to vyžaduje platný súdny príkaz alebo iný záväzný právny proces, po overení žiadosti a upozornení vás, ak je to zákonné.</p>
-<h2>7. Medzinárodné prenosy</h2>
-<p>Niektorí z vyššie uvedených príjemcov sa nachádzajú mimo Európskeho hospodárskeho priestoru (hlavne v Spojených štátoch). V prípade prenosov sú chránené prostredníctvom:</p>
-<ul>
-<li><strong>rozhodnutia Európskej komisie o primeranosti</strong> (EU-US Data Privacy Framework) pre poskytovateľov certifikovaných podľa Rámca, vrátane Google LLC;</li>
-<li><strong>štandardných zmluvných doložiek (SCC)</strong> prijatých Európskou komisiou, doplnených o ďalšie záruky, ak je to uplatniteľné;</li>
-<li>vlastných zverejnených mechanizmov prenosu príjemcov (napr. záväzné firemné záväzky spoločnosti Apple týkajúce sa ochrany súkromia).</li>
-</ul>
-<p>Kópiu príslušných záruk si môžete vyžiadať písomne na <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
-<h2>8. Uchovávanie</h2>
-<table>
-<thead><tr><th>Údaje</th><th>Kde sa nachádzajú</th><th>Ako dlho</th></tr></thead>
-<tbody>
-<tr><td>Vaše údaje v aplikácii</td><td>Iba vaše zariadenie</td><td>Kým ich nevymažete, neodstránite aplikáciu alebo nevymažete údaje aplikácie</td></tr>
-<tr><td>Reklamný identifikátor</td><td>Systémy Unity Ads</td><td>Podľa zásad uchovávania spoločnosti Unity</td></tr>
-<tr><td>Údaje o pádoch Sentry</td><td>Systémy Sentry</td><td>Až 90 dní od udalosti</td></tr>
-<tr><td>Token/potvrdenie o nákupe v aplikácii</td><td>Vaše zariadenie + Apple / Google</td><td>Kým neodstránite; Apple / Google uchovávajú záznamy o transakciách podľa vlastných zásad</td></tr>
-</tbody></table>
-<h2>9. Vaše práva (čl. 15–22 GDPR)</h2>
-<p>Vo vzťahu k vašim osobným údajom máte nasledujúce práva:</p>
-<ul>
-<li><strong>Právo na prístup (čl. 15)</strong> — potvrdenie, či spracúvame vaše údaje, a ich kópiu. Väčšina vašich údajov je už na vašom zariadení; exportujte ich z aplikácie alebo nám napíšte pre zvyšok.</li>
-<li><strong>Právo na opravu (čl. 16)</strong> — oprava nepresných údajov. Údaje upravte priamo v aplikácii.</li>
-<li><strong>Právo na vymazanie / „právo byť zabudnutý“ (čl. 17)</strong> — vymažte všetky údaje prostredníctvom Nastavenia → „Vymazať všetky údaje“, alebo odinštalovaním aplikácie.</li>
-<li><strong>Právo na obmedzenie spracúvania (čl. 18)</strong> — požiadajte o dočasné zastavenie; napíšte nám.</li>
-<li><strong>Právo na prenosnosť údajov (čl. 20)</strong> — Nastavenia → „Exportovať údaje“ vytvorí balík JSON / Markdown.</li>
-<li><strong>Právo namietať (čl. 21)</strong> — namietať proti spracúvaniu založenému na oprávnenom záujme, najmä reklamám založeným na profilovaní. Vypnite personalizované reklamy v nastaveniach aplikácie alebo prostredníctvom systémových ovládacích prvkov.</li>
-<li><strong>Právo nebyť predmetom automatizovaného rozhodovania (čl. 22)</strong> — Compresser nevykonáva automatizované rozhodnutia s právnym alebo podobne významným účinkom vo vzťahu k vám.</li>
-</ul>
-<p>Ak chcete uplatniť akékoľvek právo, napíšte na <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Odpovieme do 30 dní (predĺžiteľné o 60 dní pri komplexných žiadostiach, s oznámením).</p>
-<h2>10. Právo podať sťažnosť (čl. 77 GDPR)</h2>
-<p>Ak sa domnievate, že vaše údaje spracúvame nezákonne, môžete podať sťažnosť dozornému orgánu. Pre poľských obyvateľov:</p>
-<p><strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong> ul. Stawki 2, 00-193 Warszawa, Poland <a href="https://uodo.gov.pl">https://uodo.gov.pl</a></p>
-<p>Sťažnosť môžete podať aj dozornému orgánu v mieste vášho obvyklého pobytu, mieste výkonu práce alebo mieste údajného porušenia v inej krajine EHP.</p>
-<h2>11. Ochrana súkromia detí</h2>
-<p>Compresser <strong>nie je určený pre deti mladšie ako 13 rokov</strong> (mladšie ako 16 rokov, ak je to relevantné podľa miestnych zákonov). Vedome nezhromažďujeme osobné údaje od detí mladších ako uvedený vek. Ak sa domnievate, že nám dieťa poskytlo osobné údaje bez súhlasu rodiča, kontaktujte nás na <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> a my ich bezodkladne vymažeme.</p>
-<p>Označenia Apple / Google „Určené pre rodiny“ / „Vek 5+“ <strong>nie sú</strong> nastavené pre Compresser — aplikácia je hodnotená pre všeobecné publikum od 13 rokov.</p>
-<h2>12. Bezpečnosť</h2>
-<ul>
-<li><strong>Len lokálne operácie</strong> — kompresia prebieha výhradne v pamäti zariadenia; pôvodné a komprimované súbory nikdy neopustia vaše zariadenie.</li>
-<li><strong>Zabezpečenie prenosu</strong> — všetky sieťové volania (reklamy, IAP, diagnostika Sentry) používajú HTTPS / TLS 1.2+.</li>
-<li><strong>Minimalizácia</strong> — zhromažďujeme len to, čo je potrebné pre uvedené účely.</li>
-<li><strong>Žiadne zálohovanie obsahu súborov na naše servery</strong> — metadáta súborov (veľkosť, formát, časové značky) môžu byť uchovávané pre históriu v aplikácii, ale obsah súboru nie.</li>
-</ul>
-<p>Žiadny systém nie je 100% bezpečný; udržujte svoje zariadenie aktualizované a používajte silné zámky zariadenia.</p>
-<h2>13. App Tracking Transparency (iOS) a reklamný identifikátor</h2>
-<p>Na iOS, predtým ako Unity Ads použije akýkoľvek identifikátor na sledovanie, Compresser zobrazí systémovú výzvu <strong>App Tracking Transparency</strong>. Ak odmietnete, Compresser zobrazuje iba nepersonalizované reklamy.</p>
-<p>Na Androide môžete resetovať alebo obmedziť svoj reklamný identifikátor v časti <strong>Nastavenia → Google → Reklamy</strong>. Výberom „Vymazať reklamný identifikátor“ zabránite Unity Adsu v používaní osobného identifikátora; nepersonalizované reklamy sa budú naďalej zobrazovať.</p>
-<h2>14. Nákupy v aplikácii</h2>
-<p>Compresser ponúka nasledujúce produkty v aplikácii prostredníctvom Apple App Store a Google Play: doživotné odomknutie, voliteľný tip jar (virtuálna pokladnička), prémiové ročné predplatné.</p>
-<p>Všetky platobné údaje spracúva <strong>Apple Inc.</strong> (účet App Store / iTunes) alebo <strong>Google LLC</strong> (Play Billing). Nikdy nevidíme číslo vašej karty, vašu fakturačnú adresu ani váš úplný Apple ID / Google účet. Apple a Google vrátia iba nejasný nákupný token a metadáta nárokov, ktoré používame na odomknutie funkcií. Predplatné je možné kedykoľvek zrušiť v nastaveniach iOS → Apple ID → Predplatné alebo v aplikácii Google Play → Predplatné; pravidlá zrušenia sa riadia spoločnosťami Apple / Google.</p>
-<h2>15. Zmeny týchto zásad</h2>
-<p>Tieto zásady môžeme aktualizovať v dôsledku zmien v aplikácii, SDK tretích strán alebo platných zákonoch. Podstatné zmeny budú oznámené v aplikácii a dátum „Posledná aktualizácia“ v hornej časti sa zmení. Pokračovanie v používaní Compresser po zmene znamená prijatie aktualizovaných zásad.</p>
-<h2>16. Kontakt</h2>
-<p>Pre otázky týkajúce sa súkromia, uplatňovania práv alebo obavy týkajúce sa týchto zásad:</p>
-<p><strong>Maciej Siemiński</strong> Email: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Kanonická verzia týchto zásad: <a href="https://macsiem.github.io/compresser-privacy/">https://macsiem.github.io/compresser-privacy/</a> Zdroj: <a href="https://github.com/MacSiem/compresser-privacy">https://github.com/MacSiem/compresser-privacy</a></p>
+<h1>Pravidlá ochrany súkromia — Compresser</h1>
+<p>Naposledy aktualizované: 15. novembra 2026</p>
+<h2>1. Prevádzkovateľ a kontakt</h2>
+<p>Pre verziu pre iOS je prevádzkovateľom údajov Maciej Siemiński. Pre verziu pre Google Play je prevádzkovateľom spoločnosť LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Varšava, Poľsko. Kontakt pre oboch: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>2. Kompresia a lokálne údaje</h2>
+<p>Aplikácia Compresser komprimuje obrázky, video, audio a súbory PDF priamo vo vašom zariadení. Samotná kompresia nenahráva vaše súbory. Aplikácia ukladá nastavenia, štatistiky a históriu kompresie lokálne, vrátane názvov, typov, veľkostí a dátumov súborov. Ďalšie voliteľné funkcie a služby popísané nižšie môžu prenášať údaje.</p>
+<h2>3. Voliteľné upozornenia</h2>
+<p>Ak povolíte oznámenia a udelíte systémové oprávnenie, aplikácia zaregistruje push token Expo a trvalé náhodné ID zariadenia v našom backendovom systéme Cloudflare spolu s platformou, jazykom, verziou aplikácie, prémiovým statusom a distribučným kanálom. Môžu byť uložené aj časové značky registrácie a aktivity. S doručovaním oznámení pomáhajú služby Expo a Apple Push Notification service (APNs) alebo Firebase Cloud Messaging (FCM). Aplikácia obnovuje registráciu, kým je zapnutá.</p>
+<p>Oznámenia môžete vypnúť v aplikácii a zmeniť povolenie upozornení v nastaveniach zariadenia. Ak ste offline, žiadosť o vypnutie musí počkať, kým bude úspešne odoslaná; dovtedy môže zostať registrácia aktívna. Po úspešnej žiadosti o vypnutie odstránime push token a registračné údaje. Uchovávame minimálny záznam spojený s náhodným ID zariadenia, aby sme zabránili opätovnej registrácii zariadenia starej žiadosti. Ak chcete požiadať o vymazanie, kontaktujte nás. Aktívna registrácia je zachovaná, kým žiadosť o vypnutie nebude úspešná.</p>
+<h2>4. Diagnostika, reklama a nákupy</h2>
+<p>Sentry prijíma diagnostické udalosti, ako sú zlyhania, výpisy zásobníka (stack traces), verzia aplikácie a informácie o zariadení alebo operačnom systéme, ktoré nám pomáhajú opravovať chyby. Aplikácia filtruje diagnostické udalosti a anonymizuje voľný text a chybové hlásenia; tento filter nepopisuje každý možný prenos zo strany natívnych SDK. Informácie o postupoch nájdete v pravidlách ochrany súkromia spoločnosti Sentry.</p>
+<p>Unity Ads poskytuje reklamu. Jej SDK môže spracovávať reklamné identifikátory, informácie o zariadení a údaje o interakcii s reklamami s cieľom doručovať a meriať reklamy, v súlade s nastaveniami zariadenia a príslušnými voľbami súhlasu. Pozrite si pravidlá ochrany súkromia spoločnosti Unity. Apple alebo Google spracováva nákupy v aplikácii a informácie o účte/platbe podľa vlastných podmienok; aplikácia využíva informácie o nákupoch na poskytnutie alebo obnovenie oprávnení.</p>
+<h2>5. Účely, právne základy a príjemcovia</h2>
+<p>V prípade oznámení sa spoliehame na váš súhlas (článok 6 ods. 1 písm. a)); môžete ho stiahnuť ich vypnutím bez toho, aby to ovplyvnilo predchádzajúce spracovanie. Diagnostické údaje používame na základe nášho oprávneného záujmu o stabilitu aplikácie a opravu chýb (článok 6 ods. 1 písm. f)); môžete namietať. Spracúvame informácie o nákupoch a oprávneniach na poskytovanie alebo obnovenie nákupov (článok 6 ods. 1 písm. b)). V prípade reklamy je v prípade potreby základom súhlas (článok 6 ods. 1 písm. a)); príslušné možnosti môžete zmeniť v nastaveniach aplikácie alebo zariadenia. Medzi poskytovateľov služieb popísaných vyššie patria Google, Apple, Cloudflare, Expo, Sentry a Unity. Medzinárodné prevody sa môžu uskutočňovať v rámci príslušných záruk.</p>
+<h2>6. Uchovávanie a vaše voľby</h2>
+<p>Údaje miestnej aplikácie zostanú, kým ich neodstránite alebo nevymažete údaje aplikácie, v závislosti od správania operačného systému. Aktívne registrácie upozornení zostávajú, kým žiadosť o vypnutie neuspeje; na tento účel zostáva minimálny záznam zabraňujúci neúmyselnej opätovnej registrácii. Záznamy vysielania sa spočiatku uchovávajú 90 dní; pri kontrole potvrdení o doručení sa doba uchovávania nastaví na 30 dní po poslednej kontrole. Sentry, Unity, Apple a Google uplatňujú svoje vlastné postupy uchovávania; pozrite si ich zásady alebo nás kontaktujte v prípade otázok o údajoch, ktoré kontrolujeme.</p>
+<p>V závislosti od platných právnych predpisov môžete požiadať o prístup, opravu, vymazanie, obmedzenie, prenosnosť alebo namietat proti spracovaniu a môžete podať sťažnosť dozornému orgánu. Tieto práva môžu podliehať podmienkam a výnimkám. Kontaktujte <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>7. Bezpečnosť, deti a zmeny</h2>
+<p>Používame bezpečnostné opatrenia primerané poskytovaným službám, avšak žiadny systém nie je úplne bezpečný. Aplikácia nie je určená pre deti mladšie ako 13 rokov; kontaktujte nás, ak sa domnievate, že dieťa poskytlo osobné údaje. Tieto pravidlá môžeme aktualizovať a pri zmene postupov zmeniť vyššie uvedený dátum.</p>
+<h2>Pravidlá ochrany súkromia poskytovateľov a zdroj</h2>
+<ul><li><a href="https://www.apple.com/legal/privacy/">Pravidlá ochrany súkromia spoločnosti Apple</a></li><li><a href="https://policies.google.com/privacy">Pravidlá ochrany súkromia spoločnosti Google</a></li><li><a href="https://www.cloudflare.com/privacypolicy/">Pravidlá ochrana súkromia spoločnosti Cloudflare</a></li><li><a href="https://expo.dev/privacy">Pravidlá ochrany súkromia spoločnosti Expo</a></li><li><a href="https://sentry.io/privacy/">Pravidlá ochrany súkromia spoločnosti Sentry</a></li><li><a href="https://unity.com/legal/privacy-policy">Pravidlá ochrany súkromia spoločnosti Unity</a></li><li><a href="https://macsiem.github.io/compresser-privacy/">Kanonické pravidlá</a></li><li><a href="https://github.com/MacSiem/compresser-privacy">Zdrojový repozitár</a></li><li><a href="https://uodo.gov.pl">UODO</a></li></ul>
 
     <footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/compresser-privacy/">macsiem.github.io/compresser-privacy/</a></footer>
 </div>

@@ -69,146 +69,27 @@
 <a href="../ar/">العربية</a> · <a href="../cs/">Čeština</a> · <a href="../da/">Dansk</a> · <a href="../de/">Deutsch</a> · <a href="../en/">English</a> · <a href="../es/">Español (LatAm)</a> · <a href="../fi/">Suomi</a> · <a href="../fr/">Français</a> · <a href="../hi/">हिन्दी</a> · <a href="../hu/">Magyar</a> · <a href="../id/">Bahasa Indonesia</a> · <a href="../it/">Italiano</a> · <a href="../iw/">עברית</a> · <a href="../ja/">日本語</a> · <a href="../ko/">한국어</a> · <a href="../nl/">Nederlands</a> · <a href="../no/">Norsk</a> · <a href="../pl/">Polski</a> · <a href="../pt/">Português (BR)</a> · <a href="../ro/">Română</a> · <a href="../ru/">Русский</a> · <a href="../sk/">Slovenčina</a> · <a class="active">Svenska</a> · <a href="../th/">ไทย</a> · <a href="../tr/">Türkçe</a> · <a href="../uk/">Українська</a> · <a href="../vi/">Tiếng Việt</a> · <a href="../zh/">简体中文</a>
     </div>
 
-<h1>Integritetspolicy — Compresser</h1>
-<p>Senast uppdaterad: 2026-05-06 · Gäller fr.o.m.: 2026-05-06</p>
-<h2>1. Vilka vi är</h2>
-<p><strong>Compresser</strong> är en mobilapp för <strong>lokal komprimering på din enhet</strong> av bilder, videor, ljudfiler och PDF-filer. Integritet är grundläggande: komprimering körs <strong>lokalt på din enhet</strong> och dina filer laddas <strong>aldrig upp till våra servrar</strong> — de lämnar aldrig enheten för att läsas, kopieras eller analyseras av någon tredje part.</p>
-<p><strong>Personuppgiftsansvarig:</strong> Maciej Siemiński — utvecklaren av Compresser. <strong>Kontakt:</strong> <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>För versionen av appen som distribueras via Google Play är dataansvarig LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polska.</p>
-<p>Denna integritetspolicy förklarar vilka personuppgifter Compresser behandlar, hur, varför och vilka rättigheter du har.</p>
-<h2>2. Sammanfattning på enkel svenska</h2>
-<p>Compresser körs helt och hållet på din enhet — dina filer laddas aldrig upp till våra servrar. Vi integrerar Unity Ads för banner- och mellansidesannonser, Sentry för kraschrapportering och Apple / Google billing för köp i appen. Vi samlar inte in ditt namn, din e-post, din adress eller din exakta plats. Du har fullständiga GDPR-rättigheter inklusive tillgång, radering och dataportabilitet — de flesta kan utövas direkt i appen eller genom att skriva till mail@macsiem.dev.</p>
-<h2>3. Uppgifter vi behandlar</h2>
-<h3>3.1 Endast lokala uppgifter</h3>
-<p>Appen lagrar lokalt på din enhet:</p>
-<ul>
-<li>användarpreferenser (komprimeringskvalitet, standardformat, tema),</li>
-<li>flagga för genomförd introduktion (onboarding),</li>
-<li>komprimeringshistorik (tidsstämplar och statistik per fil — <strong>utan filinnehåll</strong>).</li>
-</ul>
-<p>Dessa uppgifter lagras helt på din enhet och överförs aldrig till våra servrar eller någon tredje part.</p>
-<h3>3.3 Diagnostikdata (Sentry)</h3>
-<p>Compresser integrerar Sentry (sentry.io) för krasch- och felrapportering. Sentry samlar in:</p>
-<ul>
-<li>felstackspårningar (kraschloggar),</li>
-<li>enhetsinformation (modell, OS-version, språkinställning),</li>
-<li>appversion och byggnummer.</li>
-</ul>
-<p>Sentry samlar <strong>inte</strong> in ditt innehåll (anteckningar, filer, vaccination records, foton, arkiv), användarnamn eller annan PII. Diagnostikdata behålls av Sentry i upp till <strong>90 dagar</strong>.</p>
-<h3>3.4 Annonsering (Unity Ads)</h3>
-<p>Compresser visar icke-invasiva annonser på Hem, Resultat och Inställningar (banner) plus mellansidesannonser efter komprimeringsbatcher. Annonser levereras av <strong>Unity Ads</strong>, vars SDK samlar in:</p>
-<ul>
-<li><strong>Annonserings-ID</strong> (Android Advertising ID / Apple IDFA), som delas med Google för att visa annonser;</li>
-<li>diagnostikdata (enhetsmodell, plats på landsnivå, språk).</li>
-</ul>
-<p>Standardläget är <strong>icke-personaliserade annonser</strong>. På iOS ber App Tracking Transparency (ATT)-frågan om ditt samtycke innan någon spårningsidentifierare används; på Android kontrollerar du Advertising ID under systeminställningarna. Annonser kan permanent inaktiveras via Lifetime / Premium IAP.</p>
-<h3>3.5 Köp i appen (IAP)</h3>
-<p>Compresser erbjuder betalda funktioner via Apple In-App Purchase (iOS) och Google Play Billing (Android). När du gör ett köp:</p>
-<ul>
-<li>Apple / Google behandlar alla kort- och kontodata — <strong>vi ser aldrig ditt kortnummer, faktureringsadress eller fullständiga kontoinformation</strong>;</li>
-<li>Apple / Google returnerar en köptoken / transaktionskvitto som Compresser lagrar lokalt för att validera behörighet;</li>
-<li>återställ köp hämtar dina befintliga behörigheter från Apple / Google igen.</li>
-</ul>
-<p>Tillgängliga produkter: livstidsupplåsning, valfri dricksburk, premium årsabonnemang.</p>
-<h3>3.6 Enhetsbehörigheter</h3>
-<ul>
-<li><strong>Foton / Media</strong> (<code>READ_MEDIA_IMAGES</code> / <code>PHPhotoLibrary</code>): lägg till eller behandla bilder från galleriet (valfritt om det inte krävs för appens kärnfunktion).</li>
-<li><strong>Filer</strong> (<code>READ_EXTERNAL_STORAGE</code> / iOS Filer): välj dokument/arkiv (endast när du väljer en fil).</li>
-<li><strong>Notifikationer</strong> (<code>POST_NOTIFICATIONS</code> / <code>UNUserNotificationCenter</code>): påminnelser och driftsstatus (valfritt).</li>
-<li><strong>Vibrera</strong> (<code>VIBRATE</code>): haptisk UI-feedback (valfritt).</li>
-</ul>
-<p>Varje behörighet begärs kontextuellt. Du kan neka vilken behörighet som helst och fortfarande använda kärnfunktionerna (där det är tillämpligt).</p>
-<h3>3.7 Vad vi INTE samlar in</h3>
-<ul>
-<li>Ditt namn, e-post, telefonnummer, adress (inget konto krävs).</li>
-<li>Kontaktlista, kalender, SMS, samtalsloggar.</li>
-<li>Exakt plats.</li>
-<li>Webbhistorik utanför appen.</li>
-<li>Biometriska data (Face ID / Touch ID används endast som ett systemlås och lämnar aldrig din enhet).</li>
-<li>Hälsa-, finans- eller betalkortsdata.</li>
-</ul>
-<h2>4. Varför vi behandlar dessa uppgifter (ändamål)</h2>
-<ul>
-<li><strong>Köra appen på din enhet</strong> — lokal lagring och (i förekommande fall) kryptering låter dina data kvarstå mellan sessioner.</li>
-<li><strong>Förbättra stabiliteten</strong> — Sentry-diagnostik hjälper till att åtgärda krascher som påverkar din användning.</li>
-<li><strong>Upprätthålla gratisversionen</strong> — Unity Ads levererar icke-invasiva annonser för att finansiera användare som inte köper premium.</li>
-<li><strong>Behandla köp</strong> — Apple / Google billing uppfyller premiumrättigheter som du väljer att köpa.</li>
-</ul>
-<h2>5. Rättslig grund (artikel 6 i GDPR)</h2>
-<p>För användare inom Europeiska ekonomiska samarbetsområdet, Storbritannien och Schweiz:</p>
-<ul>
-<li><strong>Fullgörande av avtal</strong> (artikel 6.1 b i GDPR) — att köra appen, behandla dina köp.</li>
-<li><strong>Berättigat intresse</strong> (artikel 6.1 f i GDPR) — Sentry-diagnostik, förebyggande av bedrägeri/missbruk, icke-personaliserad annonsering. Vårt intresse är att förbättra stabiliteten och upprätthålla gratisversionen; detta åsidosätter inte dina grundläggande rättigheter.</li>
-<li><strong>Samtycke</strong> (artikel 6.1 a i GDPR) — personaliserad annonsering, där du lämnar samtycke via ATT-frågan (iOS) eller inställning i appen. Du kan när som helst återkalla ditt samtycke utan att påverka tidigare behandling.</li>
-<li><strong>Rättslig förpliktelse</strong> (artikel 6.1 c i GDPR) — endast när vi måste svara på en laglig begäran från myndigheter.</li>
-</ul>
-<h2>6. Mottagare (med vilka vi delar uppgifter)</h2>
-<p>Vi <strong>säljer inte</strong> personuppgifter. Kategorierna av mottagare är begränsade till leverantörer som strikt krävs för att driva appen:</p>
-<table>
-<thead><tr><th>Mottagare</th><th>Syfte</th><th>Datakategori</th><th>Integritetspolicy</th></tr></thead>
-<tbody>
-<tr><td>Unity Technologies (Unity Ads)</td><td>Visa annonser</td><td>Advertising ID, enhets- och annonsmått</td><td><a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></td></tr>
-<tr><td>Functional Software Inc. (Sentry)</td><td>Kraschrapportering</td><td>Stackspårningar, enhetsmetadata</td><td><a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></td></tr>
-<tr><td>Apple Inc. (App Store / IAP)</td><td>Behandling av köp i appen på iOS</td><td>Purchase token, account-level entitlement</td><td><a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></td></tr>
-<tr><td>Google LLC (Play Billing)</td><td>Behandling av köp i appen på Android</td><td>Purchase token, account-level entitlement</td><td><a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></td></tr>
-</tbody></table>
-<p>Vi kan komma att lämna ut uppgifter om det krävs enligt ett giltigt domstolsbeslut eller annan bindande rättslig process, efter att ha verifierat begäran och meddelat dig där det är lagligt.</p>
-<h2>7. Internationella överföringar</h2>
-<p>Några av ovanstående mottagare är belägna utanför Europeiska ekonomiska samarbetsområdet (främst i USA). När överföringar sker skyddas de av:</p>
-<ul>
-<li><strong>Europeiska kommissionens beslut om adekvat skyddsnivå</strong> (EU-US Data Privacy Framework) för leverantörer certifierade under ramverket, inklusive Google LLC;</li>
-<li><strong>Standardavtalsklausuler (SCCs)</strong> som antagits av Europeiska kommissionen, kompletterade med ytterligare skyddsåtgärder där det är tillämpligt;</li>
-<li>mottagarnas egna publicerade överföringsmekanismer (t.ex. Apples bindande företagspolicy för integritet).</li>
-</ul>
-<p>Du kan begära en kopia av de relevanta skyddsåtgärderna genom att skriva till <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
-<h2>8. Lagring</h2>
-<table>
-<thead><tr><th>Data</th><th>Var den finns</th><th>Hur länge</th></tr></thead>
-<tbody>
-<tr><td>Dina data i appen</td><td>Endast din enhet</td><td>Tills du raderar den, avinstallerar appen eller rensar appdata</td></tr>
-<tr><td>Advertising ID</td><td>Unity Ads-system</td><td>Enligt Unitys lagringspolicy</td></tr>
-<tr><td>Sentry kraschdata</td><td>Sentry-system</td><td>Upp till 90 dagar från händelsen</td></tr>
-<tr><td>IAP-köptoken / kvitto</td><td>Din enhet + Apple / Google</td><td>Tills du avinstallerar; Apple / Google behåller transaktionsposter enligt sina egna policyer</td></tr>
-</tbody></table>
-<h2>9. Dina rättigheter (artikel 15–22 i GDPR)</h2>
-<p>Du har följande rättigheter avseende dina personuppgifter:</p>
-<ul>
-<li><strong>Rätt till tillgång (artikel 15)</strong> — bekräftelse om vi behandlar dina uppgifter och en kopia av dem. De flesta av dina uppgifter finns redan på din enhet; exportera från appen eller skriv till oss för resten.</li>
-<li><strong>Rätt till rättelse (artikel 16)</strong> — korrigera felaktiga uppgifter. Redigera uppgifter direkt i appen.</li>
-<li><strong>Rätt till radering / "rätten att bli bortglömd" (artikel 17)</strong> — radera alla uppgifter via Inställningar → "Radera all data", eller genom att avinstallera appen.</li>
-<li><strong>Rätt att begränsa behandling (artikel 18)</strong> — begära ett tillfälligt stopp; skriv till oss.</li>
-<li><strong>Rätt till dataportabilitet (artikel 20)</strong> — Inställningar → "Exportera data" producerar ett JSON / Markdown-paket.</li>
-<li><strong>Rätt att invända (artikel 21)</strong> — invända mot behandling baserad på berättigat intresse, särskilt annonser i profileringsstil. Inaktivera personaliserade annonser i appinställningarna eller via systemkontrollerna.</li>
-<li><strong>Rätt att inte bli föremål för automatiserat beslutsfattande (artikel 22)</strong> — Compresser fattar inga automatiserade beslut med rättslig eller liknande betydande verkan om dig.</li>
-</ul>
-<p>För att utöva någon rättighet, skriv till <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>. Vi svarar inom 30 dagar (kan förlängas med 60 dagar för komplexa förfrågningar, med meddelande).</p>
-<h2>10. Rätt att lämna in klagomål (artikel 77 i GDPR)</h2>
-<p>Om du anser att vi behandlar dina uppgifter olagligt, kan du lämna in ett klagomål till en tillsynsmyndighet. För boende i Polen:</p>
-<p><strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong> ul. Stawki 2, 00-193 Warszawa, Poland <a href="https://uodo.gov.pl">https://uodo.gov.pl</a></p>
-<p>Du kan också lämna in ett klagomål till tillsynsmyndigheten i det land där du har din hemvist, arbetsplats eller där den påstådda överträdelsen ägde rum i ett annat EES-land.</p>
-<h2>11. Barns integritet</h2>
-<p>Compresser är <strong>inte riktad till barn under 13 år</strong> (under 16 år där det är tillämpligt enligt lokal lag). Vi samlar inte medvetet in personuppgifter från barn under den åldern. Om du anser att ett barn har försett oss med personuppgifter utan föräldrasamtycke, kontakta oss på <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> så kommer vi att radera dem omgående.</p>
-<p>"Designed for Families" / "Ages 5+"-flaggorna för Apple / Google är <strong>inte</strong> satta på Compresser — appen är klassificerad för allmän publik från 13 år och uppåt.</p>
-<h2>12. Säkerhet</h2>
-<ul>
-<li><strong>Endast lokala operationer</strong> — komprimering körs helt i enhetens minne; de ursprungliga och komprimerade filerna lämnar aldrig din enhet.</li>
-<li><strong>Transportsäkerhet</strong> — alla nätverksanrop (annonser, IAP, Sentry-diagnostik) använder HTTPS / TLS 1.2+.</li>
-<li><strong>Minimering</strong> — vi samlar endast in det som krävs för de angivna ändamålen.</li>
-<li><strong>Ingen säkerhetskopiering av filinnehåll till våra servrar</strong> — filmetadata (storlek, format, tidsstämplar) kan behållas för historik i appen, men filinnehåll sparas inte.</li>
-</ul>
-<p>Inget system är 100 % säkert; vänligen håll din enhet uppdaterad och använd starka enhetslås.</p>
-<h2>13. App Tracking Transparency (iOS) och Advertising ID</h2>
-<p>På iOS, innan någon spårningsidentifierare används av Unity Ads, visar Compresser systemets <strong>App Tracking Transparency</strong>-fråga. Om du nekar, visar Compresser endast icke-personaliserade annonser.</p>
-<p>På Android kan du återställa eller begränsa ditt Advertising ID under <strong>Inställningar → Google → Annonser</strong>. Att välja "Radera annonserings-ID" hindrar Unity Ads från att använda en personlig identifierare; icke-personaliserade annonser fortsätter att visas.</p>
-<h2>14. Köp i appen</h2>
-<p>Compresser erbjuder följande produkter i appen via Apple App Store och Google Play: livstidsupplåsning, valfri dricksburk, premium årsabonnemang.</p>
-<p>Alla betalningsdata hanteras av <strong>Apple Inc.</strong> (App Store / iTunes-konto) eller <strong>Google LLC</strong> (Play Billing). Vi ser aldrig ditt kortnummer, din faktureringsadress eller ditt fullständiga Apple ID / Google-konto. Apple och Google returnerar endast en ogenomskinlig köptoken och behörighetsmetadata som vi använder för att låsa upp funktioner. Prenumerationer kan avbrytas när som helst i iOS Inställningar → Apple ID → Prenumerationer eller i Google Play-appen → Prenumerationer; avbokningsreglerna styrs av Apple / Google.</p>
-<h2>15. Ändringar i denna policy</h2>
-<p>Vi kan komma att uppdatera denna policy när appen, tredjeparts-SDK:er eller tillämplig lag ändras. Väsentliga ändringar kommer att meddelas i appen och datumet för "Senast uppdaterad" överst kommer att ändras. Fortsatt användning av Compresser efter en ändring utgör acceptans av den uppdaterade policyn.</p>
-<h2>16. Kontakt</h2>
-<p>För integritetsfrågor, utövande av rättigheter eller frågor om denna policy:</p>
-<p><strong>Maciej Siemiński</strong> E-post: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a></p>
-<p>Kanonisk version av denna policy: <a href="https://macsiem.github.io/compresser-privacy/">https://macsiem.github.io/compresser-privacy/</a> Källa: <a href="https://github.com/MacSiem/compresser-privacy">https://github.com/MacSiem/compresser-privacy</a></p>
+<h1>Sekretesspolicy — Compresser</h1>
+<p>Senast uppdaterad: 15 november 2026</p>
+<h2>1. Personuppgiftsansvarig och kontakt</h2>
+<p>För iOS-versionen är personuppgiftsansvarig Maciej Siemiński. För Google Play-versionen är personuppgiftsansvarig LICENCEPRO POLSKA Sp. z o.o., ul. Huculska 6, 00-730 Warszawa, Polen. Kontakt för båda: <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>2. Komprimering och lokala data</h2>
+<p>Compresser komprimerar bilder, video-, ljud- och PDF-filer på din enhet. Själva komprimeringen laddar inte upp dina filer. Appen lagrar inställningar, statistik och komprimeringshistorik lokalt, inklusive filnamn, typer, storlekar och datum. Andra valfria funktioner och tjänster som beskrivs nedan kan överföra data.</p>
+<h2>3. Valfria aviseringar</h2>
+<p>Om du aktiverar meddelanden och ger systembehörighet registrerar appen en Expo push-token och ett persistent slumpmässigt enhets-ID hos vår Cloudflare-backend, tillsammans med plattform, språk, appversion, premiumngetStatus och utgivningskanal. Registrerings- och aktivitetsstämplar kan också lagras. Expo och Apple Push Notification service (APNs) eller Firebase Cloud Messaging (FCM) hjälper till att leverera aviseringar. Appen uppdaterar registreringen medan den är aktiverad.</p>
+<p>Du kan stänga av meddelanden i appen och ändra aviseringsbehörighet i enhetsinställningarna. Om du är offline måste avstängningsbegäran vänta tills den kan skickas. tills dess kan registreringen vara aktiv. Efter en lyckad avstängningsförfrågan tar vi bort push-token och registreringsdetaljer. Vi behåller en minimal post kopplad till det slumpmässiga enhets-ID:t för att förhindra att en gammal begäran registrerar enheten igen. Kontakta oss för att begära radering. Aktiv registrering behålls tills avstängningsförfrågan lyckas.</p>
+<h2>4. Diagnostik, annonsering och köp</h2>
+<p>Sentry tar emot diagnostikhändelser som krascher, stackspårningar, appversion och enhets- eller operativsysteminformation för att hjälpa oss att åtgärda fel. Appen filtrerar diagnostikhändelser och maskerar fri text och undantagsmeddelanden; detta filter beskriver inte varje möjlig överföring av ursprungliga SDK:er. Se Sentrys integritetspolicy för dess metoder.</p>
+<p>Unity Ads tillhandahåller annonsering. Dess SDK kan behandla annonsidentifierare, enhetsinformation och annonsinteraktionsdata för att leverera och mäta annonser, med förbehåll för enhetsinställningar och tillämpliga samtyckesval. Se Unitys integritetspolicy. Apple eller Google behandlar köp i appar och konto-/betalningsinformation under sina egna policyer; appen använder köpinformation för att tillhandahålla eller återställa berättiganden.</p>
+<h2>5. Ändamål, rättsliga grunder och mottagare</h2>
+<p>För meddelanden förlitar vi oss på ditt samtycke (artikel 6(1)(a)); du kan dra tillbaka den genom att stänga av dem, utan att påverka tidigare bearbetning. Vi använder diagnostiska data på grundval av vårt legitima intresse av appstabilitet och att åtgärda fel (artikel 6(1)(f)); du kan invända. Vi behandlar köp- och rättighetsinformation för att tillhandahålla eller återställa köp (artikel 6(1)(b)). För reklam är samtycke grunden där så krävs (artikel 6.1 a); du kan ändra tillämpliga val i appen eller enhetsinställningarna. Leverantörer inkluderar Google, Apple, Cloudflare, Expo, Sentry och Unity för tjänsterna som beskrivs ovan. Internationella överföringar kan ske under tillämpliga skyddsåtgärder.</p>
+<h2>6. Lagring och dina val</h2>
+<p>Lokal appdata finns kvar tills du tar bort den eller rensar appens data, beroende på operativsystemets beteende. Aktiva anmälningsregistreringar kvarstår tills begäran om avstängning lyckas; den minimala registreringen som förhindrar oavsiktlig omregistrering finns kvar för detta ändamål. Sändningsloggar bevaras initialt i 90 dagar; när leveranskvitton kontrolleras återställs lagringstiden till 30 dagar efter den senaste kontrollen. Sentry, Unity, Apple och Google tillämpar sina egna lagringsmetoder; se deras policyer eller kontakta oss för frågor om data vi kontrollerar.</p>
+<p>Beroende på tillämplig lag kan du begära tillgång, rättelse, radering, begränsning, dataportabilitet eller invända mot behandling, och du kan lämna klagomål till en tillsynsmyndighet. Dessa rättigheter kan vara föremål för villkor och undantag. Kontakta <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a>.</p>
+<h2>7. Säkerhet, barn och ändringar</h2>
+<p>Vi använder skyddsåtgärder som är lämpliga för tjänsterna, men inget system är helt säkert. Appen riktar sig inte till barn under 13 år; kontakta oss om du tror att ett barn har tillhandahållit personuppgifter. Vi kan uppdatera denna policy och ändra datumet ovan när rutinerna ändras.</p>
+<h2>Leverantörernas integritetspolicyer och källa</h2>
+<ul><li><a href="https://www.apple.com/legal/privacy/">Apples integritetspolicy</a></li><li><a href="https://policies.google.com/privacy">Googles integritetspolicy</a></li><li><a href="https://www.cloudflare.com/privacypolicy/">Cloudflares integritetspolicy</a></li><li><a href="https://expo.dev/privacy">Expos integritetspolicy</a></li><li><a href="https://sentry.io/privacy/">Sentrys integritetspolicy</a></li><li><a href="https://unity.com/legal/privacy-policy">Unitys integritetspolicy</a></li><li><a href="https://macsiem.github.io/compresser-privacy/">Kanonisk policy</a></li><li><a href="https://github.com/MacSiem/compresser-privacy">Källkodsarkiv</a></li><li><a href="https://uodo.gov.pl">UODO</a></li></ul>
 
     <footer>© 2026 Maciej Siemiński · <a href="mailto:mail@macsiem.dev">mail@macsiem.dev</a> · <a href="https://macsiem.github.io/compresser-privacy/">macsiem.github.io/compresser-privacy/</a></footer>
 </div>
